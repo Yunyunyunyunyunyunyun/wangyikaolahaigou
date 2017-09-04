@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+			}
+			.layout{
+				width:1090px;
+				margin:0 auto;
+				position:relative;
+			}
+			ul li,ol li{
+				list-style:none;
+			}
+			a{
+				text-decoration:none;
+			}
+			/*头部*/
+			.header{
+				height:30px;
+				background-color:#f2f2f2;
+				border-bottom:1px solid #ededee;
+				color:#666;
+				font-size:12px;
+				line-height:30px;
+			}
+			.header .layout a{
+				padding:0 10px;
+				color:#666;
+			}
+			.header .layout a:hover{
+				color:#e31436;
+			}
+			.header .layout .spans{
+				color:#ced6e4;
+			}
+			.header .layout .uu{
+				float:right;
+			}
+			.header .layout .uu li{
+				float:left;
+				height:30px;
+				position:relative;
+			}
+			
+			.header .layout .uu li .uu1{
+				border:1px solid #f2f2f2;
+				border-top:none;
+				width:95px;
+				position:absolute;
+				display:none;
+				background-color:white;
+				z-index:999;
+			}
+			.header .layout .uu li .uu1 .bord{
+				border-bottom:1px solid #f2f2f2;
+			}
+			
+			/*固定导航栏*/
+			.nav{
+				width:100%;
+				height:50px;
+				border-bottom:1px solid #f2f2f2;
+				box-shadow:0 3px 3px #f2f2f2;
+				position:absolute;
+				top:30px;
+				display:none;
+				z-index:999;
+				background-color:white;
+			}
+			.nav .layout .nav_img{
+				float:left;
+				margin-top:12px;
+			}
+			.nav .layout .nav_box{
+				float:left;
+				width:511px;
+				height:34px;
+				border:2px solid #333;
+				margin-top:6px;
+				margin-left:180px;
+				border-radius:0 3px 3px 0;
+				position:relative;
+			}
+			.nav .layout .nav_box .img2{
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			.nav .layout .nav_box a:hover{
+				opacity:0.7;
+			}
+			.nav .layout .nav_box .img1{
+				position:absolute;
+				left:0;
+				top:6px;
+			}
+			.nav .layout .nav_box input{
+				position:absolute;
+				left:22px;
+				top:0;
+				height:34px;
+				width:438px;
+				border:none;
+			}
+			/*正常导航栏*/
+			.nav1{
+				width:100%;
+				height:100px;
+				position:relative;
+			}
+			.nav1 .layout{
+				position:relative;
+				padding-top:25px;	
+			}
+			.nav1 .layout .nav1_img{
+				float:left;
+				margin-top:3px;
+			}
+			.nav1 .layout .nav1_box1{
+				width:511px;
+				height:56px;
+				font-size:12px;
+			}
+			.nav1 .layout .nav1_box1 ul{
+				margin-left:350px;
+			}
+			.nav1 .layout .nav1_box{
+				width:511px;
+				height:34px;
+				border:2px solid #333;
+				margin-left:350px;
+				border-radius:0 3px 3px 0;
+				position:relative;
+			}
+			.nav1 .layout .nav1_box .img4{
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			.nav1 .layout .nav1_box a:hover{
+				opacity:0.7;
+			}
+			.nav1 .layout .nav1_box .img3{
+				position:absolute;
+				left:0;
+				top:6px;
+			}
+			.nav1 .layout .nav1_box input{
+				position:absolute;
+				left:22px;
+				top:0;
+				height:34px;
+				width:438px;
+				border:none;
+			}
+			.nav1 .layout .nav1_box1 ul{
+				width:438px;
+				padding-top:5px;
+			}
+			.nav1 .layout .nav1_box1 ul li{
+				float:left;
+				color:#999;
+			}
+			.nav1 .layout .nav1_box1 ul li a{
+				padding:0 10px;
+				color:#999;
+			}
+			.nav1 .layout .nav1_box1 ul li a:hover{
+				text-decoration:underline;
+			}
+			.nav1 .layout .nav1_box1 ul li:nth-child(1) a{
+				padding-left:0;
+			}
+			.nav1 .layout .nav1_shopcar{
+				width:110px;
+				height:35px;
+				border:1px solid #ddd;
+				border-radius:3px;
+				position:absolute;
+				left:980px;
+				top:25px;
+				line-height:35px;
+				font-size:14px;
+				color:#333;
+			}
+			.nav1 .layout .nav1_shopcar span{
+				position:absolute;
+				left:45px;
+			}
+			.nav1 .layout .nav1_shopcar img{
+				position:absolute;
+				top:7px;
+				left:22px;
+			}
+			.nav1 .layout .nav1_shopcar:hover{
+				background-color:#f5f5f5;
+			}
+			/*真正导航栏*/
+			.nav2{
+				height:40px;
+				border-bottom:2px solid #151515;
+				line-height:40px;
+			}
+			.nav2 .layout ul li{
+				float:left;
+				padding-left:40px;
+				font-weight:bold;
+			}
+			.nav2 .layout ul li a{
+				color:#333;
+				font-size:15px;
+			}
+			.nav2 .layout ul li a:hover{
+				color:#e31436;
+			}
+			.nav2 .layout ul li:nth-child(1){
+				padding:0;
+				text-align:center;
+				width:160px;
+				background-color:#151515;
+				color:#fff;
+				font-size:15px;
+				font-weight:normal;
+			}
+			/*背景*/
+			.banner{
+				height:400px;
+				top:0;
+				position:relative;
+				overflow:hidden;
+			}
+			.banner img{
+				width:1920px;
+				height:400px;
+				margin-left:-330px;
+			}
+			.banner .banner_ul{
+				position:relative;
+			}
+			.banner .banner_ul li{
+				position:absolute;
+				top:0;
+				left:0;
+			}
+			.banner .banner_ol{
+				position:absolute;
+				right:465px;
+				bottom:20px;
+				width:168px;
+			}
+			.banner .banner_ol li{
+				float:left;
+				width:20px;
+				height:20px;
+				margin:0 2px;
+				text-align:center;
+				border-radius:50%;
+				cursor:pointer;
+				color:#fff;
+				font-size:14px;
+				background-color:#747070;
+				background-color:rgba(0,0,0,0.5);
+			}
+			.banner .banner_ol li.current{
+				background-color:#e31436;
+			}
+			.banner .arr .toLeft{
+				width:35px;
+				height:70px;
+				background-color:#959595;
+				background-color:rgba(0,0,0,0.5);
+				position:absolute;
+				left:265px;
+				top:165px;
+				color:#fff;
+				text-align:center;
+				line-height:70px;
+				font-size:26px;
+				z-index:99;
+			}
+			.banner .arr .toRight{
+				width:35px;
+				height:70px;
+				background-color:#959595;
+				background-color:rgba(0,0,0,0.5);
+				position:absolute;
+				left:1140px;
+				top:165px;
+				color:#fff;
+				text-align:center;
+				line-height:70px;
+				font-size:26px;
+				z-index:99;
+			}
+			.banner .arr{
+				display:none;
+				cursor:pointer;
+			}
+			/*选项卡部分*/
+			
+			.banner .layout .select{
+				position:absolute;
+				left:0;
+				top:0;
+				z-index:1000;
+			}
+			.banner .layout .select li{
+				width:160px;
+				height:36px;
+				display:block;
+				background-color:#0f0;
+			}
+		</style>
+		<script src="cookie.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div class="header">
+			<div class="layout">
+				<span>考拉欢迎你！</span>
+				<a href="javascript:;">登录</a><span class="spans">|</span><a href="javascript:;">免费注册</a>
+				<a href="javascript:;">手机考拉海购</a>
+				<ul class="uu">
+					<li><a href="javascript:;">每日签到</a><span class="spans">|</span></li>
+					<li><a href="javascript:;">我的订单</a><span class="spans">|</span></li>
+					<li class="lis"><a href="javascript:;">个人中心▲</a>
+						<ul class="uu1">
+							<li><a href="javascript:;">我的优惠券</a></li>
+							<li class="bord"><a href="javascript:;">我的考拉豆</a></li>
+							<li><a href="javascript:;">账号管理</a></li>
+							<li class="bord"><a href="javascript:;">我的实名认证</a></li>
+							<li><a href="javascript:;">我收藏的商品</a></li>
+							<li class="bord"><a href="javascript:;">我关注的品牌</a></li>
+							<li><a href="javascript:;">售后管理</a></li>
+						</ul>
+						<span class="spans">|</span></li>
+					<li class="lis"><a href="javascript:;">客服服务▲</a>
+						<ul class="uu1">
+							<li><a href="javascript:;">联系客服</a></li>
+							<li><a href="javascript:;">帮助中心</a></li>
+						</ul>
+						<span class="spans">|</span></li>
+					<li class="lis"><a href="javascript:;">充值中心▲</a>
+						<ul class="uu1">
+							<li><a href="javascript:;">话费流量</a></li>
+							<li><a href="javascript:;">游戏充值</a></li>
+						</ul>
+						<span class="spans">|</span></li>
+					<li><a href="javascript:;">消费者告知书</a><span class="spans">|</span></li>
+					<li class="lis"><a href="javascript:;">更多▲</a>
+						<ul class="uu1">
+							<li class="bord"><a href="javascript:;">收藏本站</a></li>
+							<li><a href="javascript:;">新浪微博</a></li>
+							<li><a href="javascript:;">微信公众号</a></li>
+							<li class="bord"><a href="javascript:;">易信公众号</a></li>
+							<li class="bord"><a href="javascript:;">招商合作</a></li>
+							<li><a href="javascript:;">考拉招聘</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--固定导航栏-->
+		<div class="nav">
+			<div class="layout">
+				<img src="img/logo_nav.jpg" class="nav_img" />
+				<div class="nav_box">
+					<img src="img/search.jpg" class="img1"/>
+					<input type="text" class="_nav" placeholder="面膜"/>
+					<a href="javascript:;"><img src="img/search1.jpg" class="img2"/></a>
+				</div>
+			</div>
+		</div>
+		<!--正常导航栏-->
+		<div class="nav1">
+			<div class="layout">
+				<img src="img/logo.jpg" class="nav1_img" />
+				<div class="nav1_box1">
+					<div class="nav1_box">
+						<img src="img/search.jpg" class="img3"/>
+						<input type="text" class="_nav" placeholder="面膜"/>
+						<a href="javascript:;"><img src="img/search1.jpg" class="img4"/></a>
+					</div>
+					<ul>
+						<li><a href="javascript:;">面膜</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">MK</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">防晒</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">麦片</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">胶原蛋白</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">电动牙刷</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">口红</a><span class="spans">|</span></li>
+						<li><a href="javascript:;">耐克</a></li>
+					</ul>
+				</div>
+				<div class="nav1_shopcar"><img src="img/shopcar.jpg"/><span>购物车</span></div>
+			</div>
+		</div>
+		<!--真正导航栏-->
+		<div class="nav2">
+			<div class="layout">
+				<ul>
+					<li><i class="iconfont">&#xe6e4;</i>所有分类</li>
+					<li><a href="javascript:;">首页</a></li>
+					<li><a href="javascript:;">今日限时购</a></li>
+					<li><a href="javascript:;">每日上新</a></li>
+					<li><a href="javascript:;">国家馆</a></li>
+					<li><a href="javascript:;">全球旗舰</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--背景-->
+		<div class="banner">
+			<ul class="banner_ul">
+				<li style="z-index:7;"><a href="javascript:;"><img src="img/bg1.jpg" alt=""/></a></li>
+				<li style="z-index:6;"><a href="javascript:;"><img src="img/bg2.jpg" alt=""/></a></li>
+				<li style="z-index:5;"><a href="javascript:;"><img src="img/bg3.jpg" alt=""/></a></li>
+				<li style="z-index:4;"><a href="javascript:;"><img src="img/bg4.jpg" alt=""/></a></li>
+				<li style="z-index:3;"><a href="javascript:;"><img src="img/bg5.jpg" alt=""/></a></li>
+				<li style="z-index:2;"><a href="javascript:;"><img src="img/bg6.jpg" alt=""/></a></li>
+				<li style="z-index:1;"><a href="javascript:;"><img src="img/bg7.jpg" alt=""/></a></li>
+			</ul>
+			<ol style="z-index:8;" class="banner_ol">
+				<li class="current">1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>6</li>
+				<li>7</li>
+			</ol>
+			<div class="arr">
+				<div class="toLeft"><</div>
+				<div class="toRight">></div>
+		</div>
+		<!--选项卡部分-->
+			<div class="layout">
+				<ul class="select">
+					<li><span><i class="iconfont">&#xe6ef;</i>母婴儿童  ></span></li>
+					<li><span><i class="iconfont">&#xe6e6;</i>美容彩妆  ></span></li>
+					<li><span><i class="iconfont">&#xe6ee;</i>服饰鞋包  ></span></li>
+					<li><span><i class="iconfont">&#xe6e8;</i>家居个护  ></span></li>
+					<li><span><i class="iconfont">&#xe69c;</i>营养保健  ></span></li>
+					<li><span><i class="iconfont">&#xe677;</i>海外直邮  ></span></li>
+					<li><span><i class="iconfont">&#xe6f1;</i>数码家电  ></span></li>
+					<li><span><i class="iconfont">&#xe6f2;</i>环球美食  ></span></li>
+					<li><span><i class="iconfont">&#xe6f4;</i>运动户外  ></span></li>
+					<li><span><i class="iconfont">&#xe6ea;</i>水果生鲜  ></span></li>
+					<li><i class="iconfont">&#xe67a;</i>药品资讯  ></li>
+				</ul>
+				<div></div>
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		var height = $(".nav").height();
+		var sTop = $(document).scrollTop();
+		if( sTop > height ){
+			$(".nav").css({
+				"display":"block",
+				"position":"fixed",
+				"top" :0
+			})
+			$(".nav1").css({
+				"display":"none"
+			})
+		}else{
+			$(".nav").css({
+				"display":"none",
+				"position":"static"
+			})
+			$(".nav1").css({
+				"display":"block"
+			})
+		}
+	})
+
+	$(".layout>ul>.lis").mouseover(function(){
+		$(this).children("ul").css("display","block");
+		$(this).css({"background-color":"white","padding-bottom":"1px"});
+	}).mouseout(function(){
+		$(this).children("ul").css("display","none");
+		$(this).css({"background-color":"#f2f2f2","padding-bottom":0});
+	})
+	
+	var timer = setInterval(autoPlay,2000);
+	var index = 0;
+	function autoPlay(){
+		index ++ ;
+		if(index == $(".banner_ul li").size()){
+			index = 0;
+		}
+		$(".banner_ol li").eq( index ).addClass("current").siblings().removeClass("current");
+		$(".banner_ul li").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+	}
+	function autoPlay1(){
+		index -- ;
+		if(index == -1){
+			index = 6;
+		}
+		$(".banner_ol li").eq( index ).addClass("current").siblings().removeClass("current");
+		$(".banner_ul li").eq(index).fadeIn(1000).siblings().fadeOut(1000);
+	}
+	$(".banner").mouseover(function(){
+		$(".banner .arr").css("display","block");
+	}).mouseout(function(){
+		$(".banner .arr").css("display","none");
+	})
+	$(".arr").children().mouseover(function(){
+		clearInterval( timer );
+	}).mouseout(function(){
+		timer = setInterval(autoPlay,2000);
+	})
+	$(".arr").find(".toLeft").click(function(){
+		autoPlay1();
+	})
+	$(".arr").find(".toRight").click(function(){
+		autoPlay();
+	})
+	$(".banner_ol li").mouseover(function(){
+		clearInterval( timer );
+		index = $(this).index() - 1;
+		autoPlay();
+	}).mouseout(function(){
+		timer = setInterval(autoPlay,2000);
+	})
+</script>
