@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<script src="jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css" />
 		<style type="text/css">
 			*{
@@ -21,6 +20,21 @@
 			a{
 				text-decoration:none;
 			}
+			body{
+				background-color:#f5f5f6;
+			}
+			/*头部的头部*/
+			.header_top{
+				height:80px;
+				position: relative;
+				overflow: hidden;
+			}
+			.header_top a img{
+				display:block;
+				position:absolute;
+				left:-330px;
+				top:0;
+			}
 			/*头部*/
 			.header{
 				height:30px;
@@ -29,6 +43,9 @@
 				color:#666;
 				font-size:12px;
 				line-height:30px;
+			}
+			.header #ired{
+				color:#e31436;
 			}
 			.header .layout a{
 				padding:0 10px;
@@ -61,17 +78,16 @@
 			.header .layout .uu li .uu1 .bord{
 				border-bottom:1px solid #f2f2f2;
 			}
-			
 			/*固定导航栏*/
 			.nav{
 				width:100%;
 				height:50px;
-				border-bottom:1px solid #f2f2f2;
-				box-shadow:0 3px 3px #f2f2f2;
+				border-bottom:1px solid #ddd;
+				box-shadow:0 2px 3px #ddd;
 				position:absolute;
 				top:30px;
 				display:none;
-				z-index:999;
+				z-index:2999;
 				background-color:white;
 			}
 			.nav .layout .nav_img{
@@ -114,6 +130,7 @@
 				width:100%;
 				height:100px;
 				position:relative;
+				background-color:white;
 			}
 			.nav1 .layout{
 				position:relative;
@@ -190,14 +207,12 @@
 				font-size:14px;
 				color:#333;
 			}
+			.nav1 .layout .nav1_shopcar #gwc{
+				color:#a9a9a9;
+			}
 			.nav1 .layout .nav1_shopcar span{
 				position:absolute;
-				left:45px;
-			}
-			.nav1 .layout .nav1_shopcar img{
-				position:absolute;
-				top:7px;
-				left:22px;
+				left:25px;
 			}
 			.nav1 .layout .nav1_shopcar:hover{
 				background-color:#f5f5f5;
@@ -207,6 +222,7 @@
 				height:40px;
 				border-bottom:2px solid #151515;
 				line-height:40px;
+				background-color:white;
 			}
 			.nav2 .layout ul li{
 				float:left;
@@ -235,6 +251,8 @@
 				top:0;
 				position:relative;
 				overflow:hidden;
+				background-color:white;
+				z-index: 10000;
 			}
 			.banner img{
 				width:1920px;
@@ -304,7 +322,6 @@
 				cursor:pointer;
 			}
 			/*选项卡部分*/
-			
 			.banner .layout .select{
 				position:absolute;
 				left:0;
@@ -312,25 +329,1696 @@
 				z-index:1000;
 			}
 			.banner .layout .select li{
-				width:160px;
-				height:36px;
+				width:157px;
+				border-left-style:solid;
+				border-left-width:3px;
+				border-left-color:#151515;
+				border-left-color:rgba(0,0,0,0);
+				height:36.3px;
 				display:block;
-				background-color:#0f0;
+				background-color:#151515;
+				background-color:rgba(0,0,0,0.7);
+			}
+			.banner .layout .select li a{
+				display:block;
+				text-align:center;
+				width:140px;
+				color:#fff;
+				height:36.3px;
+				line-height:36.3px;
+				font-size:15px;
+				border-bottom:1px solid #666;
+				font-weight:normal;
+				margin-left:7px;
+			}
+			.banner .layout .select li:nth-child(11) a{
+				border-bottom:none;
+			}
+			.banner .layout .select li:nth-child(11){
+				border-bottom:1px solid #020101;
+			}
+			.banner .layout .select li.on{
+				background-color:#545454;
+				width:157px;
+				border-left:3px solid #e32a42;
+			}
+			.banner .layout .select_box{
+				position:absolute;
+				top:0;
+				left:160px;
+				height:399px;
+				width:929px;
+				background-color:#f6f6f6;
+				z-index:1000;
+				border-bottom:1px solid #333;
+				border-right:1px solid #333;
+				display:none;
+			}
+			.banner .layout .select_box .box1_left{
+				width:650px;
+				height:399px;
+				background-color:#fff;
+				position:absolute;
+				left:0;
+				top:0;
+			}
+			.banner .layout .select_box .box1_left h1 a{
+				text-decoration:none;
+				font-size:15px;
+				color:#312e29;
+				font-weight:bold;
+			}
+			.banner .layout .select_box .box1_left p a{
+				font-size:13px;
+				color:#666;
+			}
+			.banner .layout .select_box .box1_left .reds{
+				color:#ca1f43;
+			}
+			.banner .layout .select_box .box1_left .box1_left1{
+				width:280px;
+				height:150px;
+				position:absolute;
+				left:20px;
+				top:10px;
+			}
+			.banner .layout .select_box .box1_left .box1_left2{
+				width:280px;
+				height:120px;
+				position:absolute;
+				left:20px;
+				top:160px;
+			}
+			.banner .layout .select_box .box1_left .box1_left3{
+				width:280px;
+				height:75px;
+				position:absolute;
+				left:20px;
+				top:280px;
+			}
+			.banner .layout .select_box .box1_left .box1_left4{
+				width:280px;
+				height:150px;
+				position:absolute;
+				left:330px;
+				top:10px;
+			}
+			.banner .layout .select_box .box1_left .box1_left5{
+				width:280px;
+				height:120px;
+				position:absolute;
+				left:330px;
+				top:160px;
+			}
+			.banner .layout .select_box .box1_left .box1_left6{
+				width:280px;
+				height:60px;
+				position:absolute;
+				left:330px;
+				top:280px;
+			}
+			.banner .layout .select_box .box1_left h1{
+				height:30px;
+				line-height:15px;
+			}
+			.banner .layout .select_box .box1_left p{
+				height:30px;
+				line-height:30px;
+			}
+			.banner .layout .select_box .box1_left a:hover{
+				text-decoration:underline;
+			}
+			.banner .layout .select_box .box1_left .first{
+				border-top:1px solid #e9e7e8;
+			}
+			.banner .layout .select_box .box1_left span{
+				color:#cacaca;
+				padding:0 5px;
+			}
+			.banner .layout .select_box .box1_right{
+				width:244px;
+				height:244px;
+				position:absolute;
+				left:995px;
+				top:20px;
+			}
+			.banner .layout .select_box .box1_right span{
+				width:80px;
+				height:80px;
+				float:left;
+			}
+			.banner .layout .select_box .box1_right span img{
+				display:block;
+				width:80px;
+				height:80px;
+				border:1px solid #e9e9e9;
+			}
+			.banner .layout .select_box .box1_right_bottom img{
+				width:244px;
+				height:100px;
+				position:absolute;
+				left:995px;
+				top:274px;
+			}
+			/*背景底部*/
+			.banner_bottom{
+				background-color:#fff;
+				height:44px;
+				border-bottom:1px solid #eceaeb;
+			}
+			.banner_bottom .layout .left{
+				display: block;
+				height:44px;
+				line-height: 44px;
+			}
+			.banner_bottom .layout .left .sn1{
+				display:block;
+				position: absolute;
+				top: 0;
+				left:30px;
+			}
+			.banner_bottom .layout .left .sn2{
+				display:block;
+				position: absolute;
+				top: 0;
+				left:150px;
+			}
+			.banner_bottom .layout .left .sn3{
+				display:block;
+				position: absolute;
+				top: 0;
+				left:270px;
+			}
+			.banner_bottom .layout .left a{
+				color:#999;
+				font-size:12px;
+				display: block;
+				float: left;
+				height:44px;
+				width:120px;
+			}
+			.banner_bottom .layout .left a:hover{
+				color:#e21a35;
+			}
+			.banner_bottom .layout .left a .iconfont{
+				font-size:25px;	
+			}
+			.banner_bottom .layout .left a:nth-child(3) .iconfont{
+				font-size:30px;
+			}
+			.banner_bottom .layout .right{
+				line-height:44px;
+				color:#e21a35;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				height:44px;
+			}
+			.banner_bottom .layout .right a{
+				color:#e21a35;
+				font-size:12px;
+				padding-left:5px;
+			}
+			.banner_bottom .layout .right a:hover{
+				text-decoration:underline;
+			}
+			/*两侧跟随的广告导航栏*/
+			.container .container_left{
+				position:absolute;
+				left:0;
+				top:618px;
+				width:87px;
+				height:535px;
+				border-right:1px solid #e8e8e8;
+				text-align:center;
+				background-color:#fff;
+				z-index:1000;
+			}
+			.container .container_right{
+				position:absolute;
+				right:5px;
+				top:618px;
+				width:58px;
+				height:215px;
+				border:1px solid #e8e8e8;
+				text-align:center;
+				background-color:#fff;
+				z-index:1000;
+			}
+			.container .container_left a img{
+				display:block;
+				margin-left:-11px;
+			}
+			.container .container_left a:nth-child(1) img{
+				border-bottom:1px solid #e8e8e8;
+			}
+			.container .container_left .container_left_list li{
+				height:28px;
+				line-height:28px;
+				font-size:12px;
+				color:#2d2c28;
+				cursor:pointer;
+			}
+			.container .container_left .container_left_list li:hover{
+				background-color:#efefef;
+				color:#e21a35;
+			}
+			.container .container_left .container_left_list li:nth-child(12){
+				border-bottom:1px solid #e8e8e8;
+			}
+			.container .container_left .container_left_list .container_left1{
+				height:34px;
+				border-bottom:1px solid #e8e8e8;
+				line-height:34px;
+				font-weight:bold;
+				color:#263204;
+				font-size:14px;
+			}
+			.container .container_right dl{
+				width:58px;
+				height:58px;
+				line-height:25px;
+				border-bottom:1px solid #e8e8e8;
+			}
+			.container .container_right dl:hover{
+				background-color:#efefef;
+			}
+			.container .container_right dl:hover a{
+				color:#e21a35;
+			}
+			.container .container_right dl dt a{
+				color:#999;
+			}
+			.container .container_right dl dd a{
+				color:#24292f;
+			}
+			.container .container_right dl:nth-child(4){
+				width:58px;
+				height:39px;
+				line-height:16px;
+				background-color:#999;
+				color:#fff;
+				cursor:pointer;
+			}
+			.container .container_right dl:nth-child(4):hover{
+				opacity:0.8;
+			}
+			/*详情列表*/
+			.container .xqlba{
+				height: 240px;
+			}
+			.container .layout .xqlist{
+				height:240px;
+			}
+			.container .layout .xqlist li{
+				float:left;
+				margin-right:10px;
+				margin-top:20px;
+			}
+			.container .layout .xqlist li:nth-child(4){
+				margin-right:0;
+			}
+			/*今日限时购*/
+			.container .jrxsga{
+				height: 462px;
+			}
+			.container .layout .jrxsg{
+				padding-top:40px;
+				padding-bottom:15px;
+				height:25px;
+				line-height:25px;
+				color:#a1a1a9;
+				border-bottom:2px solid #333;
+			}
+			.container .layout .jrxsg .jrbt{
+				font-size:23px;
+				color:#32311c;
+				float:left;
+				font-weight:bold;
+				margin-right:10px;
+			}
+			.container .layout .jrxsg .sc{
+				font-size:14px;
+				color:#999;
+				float:left;
+				margin-right:10px;
+			}
+			.container .layout .jrxsg #s1,#s2,#s3,#s4,#s5,#s6{
+				display:block;
+				float:left;
+				text-align:center;
+				line-height:21px;
+				width:21px;
+				height:21px;
+				border-radius:50%;
+				background-color:#412b2d;
+				color:#fff;
+				margin:2px 3px 0 3px;
+			}
+			.container .layout .jrxsg #m1,#m2{
+				float:left;
+				margin:0 3px;
+			}
+			.container .layout .jrxsg a{
+				float:right;
+				font-size:14px;
+				color:#37305a;
+			}
+			.container .layout .jrxsg a:hover{
+				text-decoration:underline;
+			}
+			.container .layout .shoplist{
+				width:870px;
+				height:380px;
+			}
+			.container .layout .shoplist li{
+				width:434px;
+				height:189px;
+				border-right:1px solid #e9e9e9;
+				border-bottom:1px solid #e9e9e9;
+				position:relative;
+				float:left;
+				background-color:#fff;
+			}
+			.container .layout .shoplist li a img{
+				float:left;
+			}
+			.container .layout .shoplist li a img:hover{
+				opacity: 0.8;
+			}
+			.container .layout .shoplist li .s_right{
+				width:210px;
+				height: 160px;
+				position:absolute;
+				left:210px;
+				top:0;
+			}
+			.container .layout .shoplist li .s_right a .s_p1{
+				font-size:14px;
+				font-weight:bold;
+				color:#182b3a;
+				margin:20px 0 10px 0;
+			}
+			.container .layout .shoplist li .s_right a .s_p2{
+				font-size:12px;
+				color:#666;
+				margin-bottom:40px;
+			}
+			.container .layout .shoplist li .s_right a .s_p1:hover{
+				text-decoration: underline;
+			}
+			.container .layout .shoplist li .s_right a .s_p2:hover{
+				text-decoration: underline;
+			}
+			.container .layout .shoplist li .s_right a button{
+				float:right;
+				position:absolute;
+				bottom:0;
+				right:0;
+				height:30px;
+				width:80px;
+				background-color:#d82c28;
+				color:#fff;
+				cursor: pointer;
+			}
+			.container .layout .shoplist li .s_right .s_p3{
+				color:#e32b4d;
+				font-size:22px;
+				font-weight:bold;
+				padding-bottom: 5px;
+			}
+			.container .layout .shoplist li .s_right .s_p3 span{
+				text-decoration:line-through;
+				font-size:13px;
+				font-weight:normal;
+				color:#a1a1a1;
+				padding-left:8px;
+			}
+			.container .layout .shoplist li .s_right .s_p4{
+				width: 100px;
+				height: 18px;
+				border: 1px solid #edccc5;
+				background-color: #ffcec6;
+				color:#b72c3f;
+				font-size:12px;
+				text-align: center;
+				border-radius: 10px;	
+			}
+			.container .layout a .sp_l{
+				display: block;
+				position: absolute;
+				top: 82px;
+				left: 869px;
+			}
+			.container .layout a:hover .sp_l{
+				opacity: 0.8;
+			}
+			/*每日上新*/
+			.container .mrsxa{
+				height: 540px;
+			}
+			.container .layout .mrsx{
+				padding-top:40px;
+				padding-bottom:15px;
+				height:25px;
+				line-height:25px;
+			}
+			.container .layout .mrsx .mrbt{
+				font-size:23px;
+				color:#32311c;
+				float:left;
+				font-weight:bold;
+				margin-right:10px;
+			}
+			.container .layout .mrsx .mrs{
+				font-size:14px;
+				color:#999;
+				float:left;
+			}
+			.container .layout .mrsx a{
+				float:right;
+				font-size:14px;
+				color:#37305a;
+			}
+			.container .layout .mrsx a:hover{
+				text-decoration:underline;
+			}
+			.container .layout .mrsxml{
+				background-color: #fff;
+				width: 359px;
+				height: 229px;
+				border-bottom: 1px solid #efefef;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .mrsxml .mrsxml1{
+				float: left;
+				text-align: center;
+				margin-top:45px;
+			}
+			.container .layout .mrsxml .mrsxml1 a img{
+				margin-bottom:15px;
+			}
+			.container .layout .mrsxml .mrsxml1 a .p1{
+				color:#000010;
+				margin-bottom:5px;
+				font-size: 14px;
+			}
+			.container .layout .mrsxml .mrsxml1 a .p2{
+				color:#df1c3e;
+				font-size: 18px;
+				width: 105px;
+				height: 20px;
+				line-height: 20px;
+				padding-left: 15px;
+			}
+			.container .layout .mrsxml .mrsxml1 a .p2 .ss1,.ss2{
+				font-weight: bold;
+			}
+			.container .layout .mrsxml .mrsxml1 a .p2 .ss3{
+				display: block;
+				float: right;
+				width:14px;
+				height:15px;
+				border-radius:50%;
+				background-color: #e41235;
+				color: #fff;
+				margin-top: 2px;
+				text-align: center;
+				line-height: 15px;
+				font-size: 14px;
+				
+			}
+			.container .layout .mrsxml .mrsxml2{
+				float: left;
+				margin-top: 25px;
+				margin-left:20px;
+			}
+			.container .layout .mrsxml .mrsxml2 a img:hover{
+				margin-left:-10px;
+			}
+			.container .layout .shoplist1{
+				height:230px;
+			}
+			.container .layout .shoplist1 li:nth-child(1){
+				position: absolute;
+				left: 360px;
+				top:80px;
+				border-bottom: 1px solid #efefef;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(2){
+				position: absolute;
+				left: 540px;
+				top:80px;
+				border-bottom: 1px solid #efefef;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(3){
+				position: absolute;
+				left: 720px;
+				top:80px;
+				border-bottom: 1px solid #efefef;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(4){
+				position: absolute;
+				left: 900px;
+				top:80px;
+			}
+			.container .layout .shoplist1 li:nth-child(5){
+				position: absolute;
+				left: 0px;
+				top:310px;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(6){
+				position: absolute;
+				left: 180px;
+				top:310px;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(7){
+				position: absolute;
+				left: 360px;
+				top:310px;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(8){
+				position: absolute;
+				left: 540px;
+				top:310px;
+				border-right: 1px solid #efefef;
+			}
+			.container .layout .shoplist1 li:nth-child(9){
+				position: absolute;
+				left: 720px;
+				top:310px;
+			}
+			.container .layout .shoplist1 li{
+				height: 229px;
+				width:179px;
+				text-align: center;
+				background-color: #fff;
+			}
+			.container .layout .shoplist1 li a .ppp1{
+				width:150px;
+				font-size: 13px;
+				color:#343635;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				margin:5px 15px;
+			}
+			.container .layout .shoplist1 li a .ppp1:hover{
+				text-decoration: underline;
+			}
+			.container .layout .shoplist1 li a img:hover{
+				opacity: 0.8;
+			}
+			.container .layout .shoplist1 li .ppp2{
+				color:#e70a35;
+				font-size:14px;
+				font-weight: bold;
+			}
+			.container .layout .shoplist1 li .ppp2 .sss1{
+				color:#959691;
+				font-size:12px;
+				font-weight: normal;
+				padding-left:10px;
+				text-decoration: line-through;
+			}
+			.container .layout .mrsx_wm{
+				display: block;
+				width:179px;
+				height:229px;
+				position: absolute;
+				left: 900px;
+				top:310px;
+				background-color: #29b1ff;
+			}
+			.container .layout .mrsx_wm:hover{
+				opacity: 0.8;
+			}
+			.container .layout .mrsx_wm .last1{
+				width:135px;
+				height:151px;
+				background-color:#fff;
+				position:absolute;
+				top: 22px;
+				left:22px;
+			}
+			.container .layout .mrsx_wm .last1 span{
+				display:block;
+				height:71px;
+				width:68px;
+				font-size:32px;
+				color:#666;
+				padding:10px 32px;
+			}
+			.container .layout .mrsx_wm .last1 .mrsx_hx{
+				color:#000;
+				margin-left:57px;
+			}
+			.container .layout .mrsx_wm .last1 .mrsx_time{
+				color:#0f0f0f;
+				font-size: 28px;
+				margin-left:30px;
+			}
+			.container .layout .mrsx_wm .last2{
+				width:101px;
+				height:26px;
+				color:#fff;
+				background-color:#19111e;
+				position:absolute;
+				top:183px;
+				left:39px;
+				font-size:12px;
+				text-align: center;
+				line-height:26px;
+				border-radius: 15px;
+			}
+			/*热门品牌*/
+			.container .rmppa{
+				height: 355px;
+			}
+			.container .layout .rmpp{
+				padding-top:40px;
+				padding-bottom:15px;
+				height:25px;
+				line-height:25px;
+			}
+			.container .layout .rmpp .rmbt{
+				font-size:23px;
+				color:#32311c;
+				float:left;
+				font-weight:bold;
+				margin-right:10px;
+			}
+			.container .layout .rmpp .rms{
+				font-size:14px;
+				color:#999;
+				float:left;
+			}
+			.container .layout .rmpp a{
+				float:right;
+				font-size:14px;
+				color:#37305a;
+			}
+			.container .layout .rmpp a:hover{
+				text-decoration:underline;
+			}
+			.container .layout .rmpp_top{
+				position: absolute;
+				height: 181px;
+				width:181px;
+			}
+			.container .layout .rmpp_top li{
+				position:absolute;
+				left: 0;
+				top: 0;
+			}
+			.container .layout .rmpp_top li a img{
+				display: block;
+			}
+			.container .layout .rmpp_center{
+				height:2px;
+				width:181px;
+				position:absolute;
+				top:261px;
+				left:0;
+			}
+			.container .layout .rmpp_center .rmpp_center1{
+				display:block;
+				height:2px;
+				width:59px;
+				background-color: #585858;
+				position:absolute;
+				top:0;
+				left:0;
+				opacity: 0.6;
+				z-index: 10;
+			}
+			.container .layout .rmpp_center .rmpp_center2{
+				display:block;
+				height:2px;
+				width:59px;
+				background-color: #585858;
+				position:absolute;
+				top:0;
+				left:61px;
+				opacity: 0.6;
+				z-index: 10;
+			}
+			.container .layout .rmpp_center .rmpp_center3{
+				display:block;
+				height:2px;
+				width:59px;
+				background-color: #585858;
+				position:absolute;
+				top:0;
+				left:122px;
+				opacity: 0.6;
+				z-index: 10;
+			}
+			.container .layout .rmpp_bottom{
+				height:94px;
+				width:181px;
+				position:absolute;
+				left: 0;
+				top:261px;
+			}
+			.container .layout .rmpp_bottom a{
+				height:94px;
+				width:181px;
+				background-color: #151515;
+				position:absolute;
+				left: 0;
+				top:0;
+				display: block;
+				color: #fff;
+			}
+			.container .layout .rmpp_bottom a .p1{
+				display: block;
+				width:151px;
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				height:15px;
+				font-size: 14px;
+				font-weight: bold;
+				line-height: 15px;
+				margin:25px 15px 5px 15px;
+				text-align: center;
+			}
+			.container .layout .rmpp_bottom a .p2{
+				height:15px;
+				font-size: 12px;
+				font-weight: normal;
+				line-height: 15px;
+				text-align: center;
+			}
+			.container .layout .rmpp_arr .rmpp_toLeft{
+				width:26px;
+				height:33px;
+				background-color:#536161;
+				opacity: 0.5;
+				position:absolute;
+				left:0;
+				top:155px;
+				color:#fff;
+				text-align:center;
+				line-height:33px;
+				font-size:20px;
+				font-weight: bold;
+				z-index:19;
+			}
+			.container .layout .rmpp_arr .rmpp_toLeft:hover{
+				opacity: 1;
+			}
+			.container .layout .rmpp_arr .rmpp_toRight{
+				width:26px;
+				height:33px;
+				background-color:#536161;
+				opacity: 0.5;
+				position:absolute;
+				left:155px;
+				top:155px;
+				color:#fff;
+				text-align:center;
+				line-height:33px;
+				font-size:20px;
+				font-weight: bold;
+				z-index:19;
+			}
+			.container .layout .rmpp_arr .rmpp_toRight:hover{
+				opacity: 1;
+			}
+			.container .layout .rmpp_arr{
+				display: none;
+				cursor: pointer;
+			}
+			.container .layout .rmpp_list{
+				height: 275px;
+				width:909px;
+				position: absolute;
+				left:181px;
+				top:80px;
+			}
+			.container .layout .rmpp_list li{
+				float: left;
+				height:137px;
+				width:180px;
+				text-align: center;
+				font-size: 12px;
+				background-color: #fff;
+				border-bottom: 1px solid #f1f1f1;
+				border-right: 1px solid #f1f1f1;
+			}
+			.container .layout .rmpp_list li img{
+				margin-bottom:7px;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm1{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 181px;
+				top:80px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm2{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 362px;
+				top:80px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm3{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 543px;
+				top:80px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm4{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 724px;
+				top:80px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm5{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 905px;
+				top:80px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm6{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 181px;
+				top:218px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm7{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 362px;
+				top:218px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm8{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 543px;
+				top:218px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm9{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 724px;
+				top:218px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rmpp_list_bm10{
+				height:137px;
+				width:181px;
+				position:absolute;
+				left: 905px;
+				top:218px;
+				background-color:#404040;
+				background-color:rgba(0,0,0,0.8);
+				z-index: 100;
+				text-align:center;
+				display: none;
+			}
+			.container .layout .rmpp_list_bm .rlb1{
+				width:60px;
+				height:18px;
+				line-height: 18px;
+				display:block;
+				border: 1px solid #fff;
+				color: #fff;
+				font-size: 12px;
+				border-radius: 8px;
+				position:absolute;
+				left: 10px;
+				top:10px;
+			}
+			.container .layout .rmpp_list_bm .rlb1:hover{
+				background-color: #fff;
+				color: #000;
+			}
+			.container .layout .rmpp_list_bm p{
+				color:#fff;
+				font-size:12px;
+				position:absolute;
+				left: 0;
+				top: 46px;
+				width:181px;
+				text-align: center;
+			}
+			.container .layout .rmpp_list_bm .rlb2{
+				width:76px;
+				height:21px;
+				line-height: 21px;
+				display:block;
+				color: #fff;
+				font-size: 12px;
+				border-radius: 10px;
+				background-color: #e31436;
+				position:absolute;
+				left: 50px;
+				top:70px;
+			}
+			/*母婴专区*/
+			.container .myzqa{
+				height: 643px;
+			}
+			.container .layout .myzq{
+				padding-top:40px;
+				padding-bottom:15px;
+				height:25px;
+				line-height:25px;
+				border-bottom:2px solid #333;
+			}
+			.container .layout .myzq .mybt{
+				font-size:23px;
+				color:#32311c;
+				float:left;
+				font-weight:bold;
+				margin-right:10px;
+			}
+			.container .layout .myzq span{
+				font-size:14px;
+				color:#999;
+				float:left;
+			}
+			.container .layout .myzq span .mred{
+				color: #c61d48;
+			}
+			.container .layout .myzq .sa1{
+				padding:0 10px;
+				color: #ccc;
+			}
+			.container .layout .myzq a{
+				float:right;
+				font-size:14px;
+				color:#37305a;
+			}
+			.container .layout .myzq a:hover{
+				text-decoration:underline;
+			}
+			.container .layout .myzq_left_wm{
+				width:246px;
+				height:440px;
+				position: left;
+				top:80px;
+				left:0;
+			}
+			.container .layout .myzq_left_wm .mz{
+				display: block;
+				width: 60px;
+				height: 60px;
+				background-color:#fff;
+				color: #000;
+				font-size: 12px;
+				text-align: center;
+				line-height: 60px;
+				border-radius: 50%;
+			}
+			.container .layout .myzq_left_wm .mz:hover{
+				background-color: #fde1e7;
+				color: #e41437;
+			}
+			.container .layout .myzq_left_wm .myzq_left1{
+				position: absolute;
+				left: 24px;
+				top: 104px;
+			}
+			.container .layout .myzq_left_wm .myzq_left2{
+				position: absolute;
+				left: 92px;
+				top: 104px;
+			}
+			.container .layout .myzq_left_wm .myzq_left3{
+				position: absolute;
+				left: 160px;
+				top: 104px;
+			}
+			.container .layout .myzq_left_wm .myzq_left4{
+				position: absolute;
+				left: 24px;
+				top: 172px;
+			}
+			.container .layout .myzq_left_wm .myzq_left5{
+				position: absolute;
+				left: 92px;
+				top: 172px;
+			}
+			.container .layout .myzq_left_wm .myzq_left6{
+				position: absolute;
+				left: 160px;
+				top: 172px;
+			}
+			.container .layout .myzq_center_wm{
+				height: 440px;
+				width: 600px;
+				background-color: #fff;
+				position: absolute;
+				left: 246px;
+				top:82px;
+			}
+			.container .layout .myzq_center_wm a{
+				width:299px;
+				height:219px;
+				text-align: center;
+				border-bottom: 1px solid #e9e9e9;
+				border-right: 1px solid #e9e9e9;
+				float: left;
+			}
+			.container .layout .myzq_center_wm a img{
+				margin-top: 15px;
+			}
+			.container .layout .myzq_center_wm a img:hover{
+				opacity: 0.8;
+			}
+			.container .layout .myzq_center_wm a .mc1{
+				font-size:16px;
+				font-weight: bold;
+				color: #333;
+				margin-top: 20px;
+			}
+			.container .layout .myzq_center_wm a .mc2{
+				font-size:14px;
+				color: #666;
+			}
+			.container .layout .myzq_right_wm{
+				height: 439px;
+				width: 243px;
+				position: absolute;
+				left: 846px;
+				top:82px;
+				background-color: #fff;
+				border-bottom: 1px solid #e9e9e9;
+				border-right: 1px solid #e9e9e9;
+			}
+			.container .layout .myzq_right_wm .myzq_bt{
+				font-size:16px;
+				font-weight: bold;
+				color: #333;
+				margin-top: 20px;
+				margin-left: 20px;
+			}
+			.container .layout .myzq_right_wm .myqy1{
+				position: absolute;
+				left: 20px;
+				top: 50px;
+				height: 90px;
+				width:205px;
+				border-bottom: 1px dotted #eee;
+			}
+			.container .layout .myzq_right_wm .myqy1 a{
+				display: block;
+				height: 35px;
+				width: 125px;
+				position: absolute;
+				left: 80px;
+				top: 5px;
+				font-size: 12px;
+				color: #5e5e5e;
+				overflow: hidden; 
+				background-color: #fff;
+			}
+			.container .layout .myzq_right_wm .myqy1 p{
+				display: block;
+				position: absolute;
+				left: 80px;
+				top:48px;
+				background-color:#fff;
+				font-size: 14px;
+				font-weight: bold;
+				color: #e71c5b;
+			}
+			.container .layout .myzq_right_wm .myqy1 p span{
+				color:#999;
+				font-size: 12px;
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+			.container .layout .myzq_right_wm .myqy2{
+				position: absolute;
+				left: 20px;
+				top: 145px;
+				height: 90px;
+				width:205px;
+				border-bottom: 1px dotted #eee;
+			}
+			.container .layout .myzq_right_wm .myqy2 a{
+				display: block;
+				height: 35px;
+				width: 125px;
+				position: absolute;
+				left: 80px;
+				top: 5px;
+				font-size: 12px;
+				color: #5e5e5e;
+				overflow: hidden; 
+				background-color: #fff;
+			}
+			.container .layout .myzq_right_wm .myqy2 p{
+				display: block;
+				position: absolute;
+				left: 80px;
+				top:48px;
+				background-color:#fff;
+				font-size: 14px;
+				font-weight: bold;
+				color: #e71c5b;
+			}
+			.container .layout .myzq_right_wm .myqy2 p span{
+				color:#999;
+				font-size: 12px;
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+			.container .layout .myzq_right_wm .myqy3{
+				position: absolute;
+				left: 20px;
+				top: 240px;
+				height: 90px;
+				width:205px;
+				border-bottom: 1px dotted #eee;
+			}
+			.container .layout .myzq_right_wm .myqy3 a{
+				display: block;
+				height: 35px;
+				width: 125px;
+				position: absolute;
+				left: 80px;
+				top: 5px;
+				font-size: 12px;
+				color: #5e5e5e;
+				overflow: hidden; 
+				background-color: #fff;
+			}
+			.container .layout .myzq_right_wm .myqy3 p{
+				display: block;
+				position: absolute;
+				left: 80px;
+				top:48px;
+				background-color:#fff;
+				font-size: 14px;
+				font-weight: bold;
+				color: #e71c5b;
+			}
+			.container .layout .myzq_right_wm .myqy3 p span{
+				color:#999;
+				font-size: 12px;
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+			.container .layout .myzq_right_wm .myqy4{
+				position: absolute;
+				left: 20px;
+				top: 335px;
+				height: 90px;
+				width:205px;
+			}
+			.container .layout .myzq_right_wm .myqy4 a{
+				display: block;
+				height: 35px;
+				width: 125px;
+				position: absolute;
+				left: 80px;
+				top: 5px;
+				font-size: 12px;
+				color: #5e5e5e;
+				overflow: hidden; 
+				background-color: #fff;
+			}
+			.container .layout .myzq_right_wm .myqy4 p{
+				display: block;
+				position: absolute;
+				left: 80px;
+				top:48px;
+				background-color:#fff;
+				font-size: 14px;
+				font-weight: bold;
+				color: #e71c5b;
+			}
+			.container .layout .myzq_right_wm .myqy4 p span{
+				color:#999;
+				font-size: 12px;
+				font-weight: normal;
+				text-decoration: line-through;
+			}
+			.container .layout .myzq_right_wm .myzq_bottoms{
+				width:200px;
+				height:18px;
+				position: absolute;
+				left: 20px;
+				top: 411px;
+				z-index: 5;
+			}
+			.container .layout .myzq_right_wm .myzq_bottoms li{
+				width: 6px;
+				height: 6px;
+				background-color: #ddd;
+				float: left;
+				margin: 6px 2px;
+				border-radius: 50%;
+			}
+			.container .layout .myzq_right_wm .myzq_bottoms li:nth-child(1){
+				margin-left: 87px;
+			}
+			.container .layout .myzq_bottom_logo{
+				height: 109px;
+				border: 1px solid #eee;
+				background-color: #fff;
+				margin-top: 10px;
+				position: relative;
+			}
+			.container .layout .myzq_bottom_logo li{
+				float: left;
+				width: 120px;
+				height: 109px;
+				line-height: 109px;
+				text-align: center;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(1){
+				color: #41310d;
+				font-size: 15px;
+				font-weight: bold;
+				width: 128px;
+			}
+			.container .layout .myzq_bottom_logo li span{
+				color: #e50021;
+				display: none;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(2) span{
+				position: absolute;
+				left: 220px;
+				top:-40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(3) span{
+				position: absolute;
+				left: 340px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(4) span{
+				position: absolute;
+				left: 460px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(5) span{
+				position: absolute;
+				left: 580px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(6) span{
+				position: absolute;
+				left: 700px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(7) span{
+				position: absolute;
+				left: 820px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(8) span{
+				position: absolute;
+				left: 940px;
+				top: -40px;
+			}
+			.container .layout .myzq_bottom_logo li:nth-child(9) span{
+				position: absolute;
+				left: 1060px;
+				top: -40px;
+			}
+			.container .cnxha{
+				height: 425px;
+			}
+			.container .layout .cnxh{
+				padding-top:40px;
+				padding-bottom:15px;
+				height:25px;
+				line-height:25px;
+			}
+			.container .layout .cnxh .cnbt{
+				font-size:23px;
+				color:#32311c;
+				float:left;
+				font-weight:bold;
+				margin-right:10px;
+			}
+			.container .layout .cnxh .cns{
+				font-size:14px;
+				color:#666;
+				float:left;
+			}
+			.container .layout .cnxh_content{
+				height:350px;
+				border-left: 1px solid #eee;
+				border-top: 1px solid #eee;
+				border-bottom:1px solid #eee;
+			}
+			.container .layout .cnxh_content li img{
+				width: 271px;
+				height: 271px;
+			}
+			.container .layout .cnxh_content li{
+				width: 271px;
+				height: 350px;;
+				border-right: 1px solid #eee;
+				float: left;
+				background-color: #fff;
+			}
+			.container .layout .cnxh_content li:nth-child(1) p a{
+				display: block;
+				margin: 0 10px;
+				color: #222;
+				font-size: 12px;
+				width:251px;
+				overflow: hidden;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+			.container .layout .cnxh_content li:nth-child(2) p a{
+				display: block;
+				margin: 0 10px;
+				color: #222;
+				font-size: 12px;
+				width:251px;
+				overflow: hidden;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+			.container .layout .cnxh_content li:nth-child(3) p a{
+				display: block;
+				margin: 0 10px;
+				color: #222;
+				font-size: 12px;
+				width:251px;
+				overflow: hidden;
+				white-space:nowrap;
+				text-overflow: ellipsis;
+			}
+			.container .layout .cnxh_content li:nth-child(4) p a{
+				display: block;
+				margin: 0 10px;
+				color: #222;
+				font-size: 12px;
+				width:251px;
+			}
+			.container .layout .cnxh_content li .cnxh_red{
+				margin: 0 10px;
+				font-size: 12px;
+				color: #ff155a;
+			}
+			.container .layout .cnxh_content li .cnxh_price{
+				font-size: 18px;
+				font-weight: bold;
+				color: #f30d41;
+				margin: 5px 10px 10px 10px;
+			}
+			.container .layout .cnxh_content li .cnxh_price span{
+				font-size: 12px;
+				color: #999;
+				text-decoration: line-through;
+				font-weight: normal;
+			}
+			.container .layout .cnxh_content li .cnxh_price .cnxh_pj1{
+				font-size: 12px;
+				color: #999;
+				font-weight: normal;
+				position:absolute;
+				left: 170px;
+				bottom:10px;
+				width:85px;
+			}
+			.container .layout .cnxh_content li .cnxh_price .cnxh_pj2{
+				font-size: 12px;
+				color: #999;
+				font-weight: normal;
+				position:absolute;
+				left: 441px;
+				bottom:10px;
+				width:85px;
+			}
+			.container .layout .cnxh_content li .cnxh_price .cnxh_pj3{
+				font-size: 12px;
+				color: #999;
+				font-weight: normal;
+				position:absolute;
+				left: 712px;
+				bottom:10px;
+				width:85px;
+			}
+			.container .layout .cnxh_content li .cnxh_price .cnxh_pj4{
+				font-size: 12px;
+				color: #999;
+				font-weight: normal;
+				position:absolute;
+				left: 983px;
+				bottom:10px;
+				width:85px;
+			}
+			.container .layout .cnxh_content li a img:hover{
+				opacity: 0.8;
+			}
+			.container .layout .cnxh_content li p a:hover{
+				text-decoration: underline;
+			}
+			/*底部*/
+			.bottom{
+				height: 385px;
+				background-color: #fff;
+				margin-top: 80px;
+			}
+			.bottom .bottom_top{
+				width: 1200px;
+				margin: 0 auto;
+				height: 125px;
+				border-bottom:1px solid #eaeaea;
+			}
+			.bottom .bottom_top ul li{
+				float: left;
+				width: 300px;
+				height: 125px;
+				position: relative;
+			}
+			.bottom .bottom_top ul li .iconfont{
+				font-size: 50px;
+				font-weight: bold;
+				color: #333;
+				position: absolute;
+				left: 0;
+				top: 35px;
+			}
+			.bottom .bottom_top ul li:nth-child(3) .iconfont{
+				font-size: 45px;
+				font-weight: bold;
+				color: #333;
+			}
+			.bottom .bottom_top ul li p{
+				position: absolute;
+				left: 60px;
+				top: 35px;
+				color: #333;
+				font-size: 18px;
+				font-weight: bold;
+			}
+			.bottom .bottom_top ul li span{
+				position: absolute;
+				left: 60px;
+				top: 60px;
+				color: #333;
+				font-size: 14px;
+				font-weight: normal;
+			}
+			.bottom .bottom_bottom{
+				width: 1150px;
+				height: 130px;
+				position: relative;
+				margin: 35px auto;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l{
+				width: 240px;
+				height: 130px;
+				float: left;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp{
+				font-size: 12px;
+				color: #333;
+				margin-top: 10px;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp .bottomsp{
+				float: left;
+				margin-top: 8px;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp .ic1{
+				font-size: 30px;
+				color: #d50013;
+				margin-left: 15px;
+				opacity: 0.8;
+				cursor: pointer;
+				float: left;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp .ic2{
+				font-size: 32px;
+				color: #00ba00;
+				margin-left: 15px;
+				opacity: 0.8;
+				cursor: pointer;
+				float: left;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp .ic3{
+				font-size: 32px;
+				color: #0ac493;
+				margin-left: 15px;
+				opacity: 0.8;
+				cursor: pointer;
+				float: left;
+			}
+			.bottom .bottom_bottom .bottom_bottom_l .bottomp .iconfont:hover{
+				opacity: 1;
+			}
+			.bottom .bottom_bottom .bottom_bottom_c ul{
+				width: 135px;
+				height: 130px;
+				float: left;
+				border-left: 1px solid #eaeaea;
+			}
+			.bottom .bottom_bottom .bottom_bottom_c ul h3{
+				font-size: 18px;
+				font-weight: normal;
+				color: #343432;
+				margin-left: 20px;
+				margin-bottom: 15px;
+			}
+			.bottom .bottom_bottom .bottom_bottom_c ul li{
+				font-size: 12px;
+				font-weight: normal;
+				color: #343432;
+				margin-left: 20px;
+				margin-bottom: 8px;
+			}
+			.bottom .bottom_bottom .bottom_bottom_c ul li:hover{
+				text-decoration: underline;
+			}
+			.bottom .bottom_bottom .bottom_bottom_r p{
+				font-size: 12px;
+				color: #343432;
+			}
+			.bottom .bottom_bottom .bottom_bottom_r .btt1{
+				width: 108px;
+				height: 130px;
+				float: left;
+				margin-right: 10px;
+			}
+			.footer{
+				background-color: #333;
+				height: 155px;
+				text-align: center;
+			}
+			.footer p{
+				color: #bbb;
+				font-size: 12px;
+				margin-bottom: 10px;
+			}
+			.footer p a{
+				color: #bbb;
+			}
+			.footer p a:hover{
+				text-decoration: underline;
+			}
+			.footer p:nth-child(1){
+				padding-top: 20px;
+			}
+			.footer .footer_img1{
+				width: 80px;
+				height: 30px;
+			}
+			.footer .footer_img2{
+				width: 28px;
+				height: 30px;
+			}
+			.footer .footer_bot{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.footer .footer_bot .footer_img3{
+				float:left;
+				margin-right: 5px;
+			}
+			.footer .footer_bot .spa3{
+				float:left;
 			}
 		</style>
-		<script src="cookie.js"></script>
 	</head>
 	<body>
+		<!--头部的头部-->
+		<div class="header_top">
+			<a href="javascript:;"><img src="img/header_top.jpg"/></a>
+		</div>
 		<!--头部-->
 		<div class="header">
 			<div class="layout">
 				<span>考拉欢迎你！</span>
-				<a href="javascript:;">登录</a><span class="spans">|</span><a href="javascript:;">免费注册</a>
-				<a href="javascript:;">手机考拉海购</a>
+				<a href="login.html">登录</a><span class="spans">|</span><a href="register.html">免费注册</a>
+				<a href="javascript:;"><i class="iconfont" id="ired">&#xe627;</i>手机考拉海购</a>
 				<ul class="uu">
-					<li><a href="javascript:;">每日签到</a><span class="spans">|</span></li>
+					<li><a href="login.html" target="_blank"><i class="iconfont" id="ired">&#xe690;</i>每日签到</a><span class="spans">|</span></li>
 					<li><a href="javascript:;">我的订单</a><span class="spans">|</span></li>
-					<li class="lis"><a href="javascript:;">个人中心▲</a>
+					<li class="lis"><a href="javascript:;">个人中心<i class="iconfont">&#xe624;</i></a>
 						<ul class="uu1">
 							<li><a href="javascript:;">我的优惠券</a></li>
 							<li class="bord"><a href="javascript:;">我的考拉豆</a></li>
@@ -341,20 +2029,20 @@
 							<li><a href="javascript:;">售后管理</a></li>
 						</ul>
 						<span class="spans">|</span></li>
-					<li class="lis"><a href="javascript:;">客服服务▲</a>
+					<li class="lis"><a href="javascript:;">客服服务<i class="iconfont">&#xe624;</i></a>
 						<ul class="uu1">
 							<li><a href="javascript:;">联系客服</a></li>
 							<li><a href="javascript:;">帮助中心</a></li>
 						</ul>
 						<span class="spans">|</span></li>
-					<li class="lis"><a href="javascript:;">充值中心▲</a>
+					<li class="lis"><a href="javascript:;">充值中心<i class="iconfont">&#xe624;</i></a>
 						<ul class="uu1">
 							<li><a href="javascript:;">话费流量</a></li>
 							<li><a href="javascript:;">游戏充值</a></li>
 						</ul>
 						<span class="spans">|</span></li>
-					<li><a href="javascript:;">消费者告知书</a><span class="spans">|</span></li>
-					<li class="lis"><a href="javascript:;">更多▲</a>
+					<li><a href="notification.html">消费者告知书</a><span class="spans">|</span></li>
+					<li class="lis"><a href="javascript:;">更多<i class="iconfont">&#xe624;</i></a>
 						<ul class="uu1">
 							<li class="bord"><a href="javascript:;">收藏本站</a></li>
 							<li><a href="javascript:;">新浪微博</a></li>
@@ -399,15 +2087,15 @@
 						<li><a href="javascript:;">耐克</a></li>
 					</ul>
 				</div>
-				<div class="nav1_shopcar"><img src="img/shopcar.jpg"/><span>购物车</span></div>
+				<div class="nav1_shopcar"><span><i class="iconfont" id="gwc">&#xe602;</i>  购物车</span></div>
 			</div>
 		</div>
 		<!--真正导航栏-->
 		<div class="nav2">
 			<div class="layout">
 				<ul>
-					<li><i class="iconfont">&#xe6e4;</i>所有分类</li>
-					<li><a href="javascript:;">首页</a></li>
+					<li><i class="iconfont">&#xe623;</i>  所有分类</li>
+					<li><a href="index.html" target="_blank">首页</a></li>
 					<li><a href="javascript:;">今日限时购</a></li>
 					<li><a href="javascript:;">每日上新</a></li>
 					<li><a href="javascript:;">国家馆</a></li>
@@ -417,6 +2105,7 @@
 		</div>
 		<!--背景-->
 		<div class="banner">
+			<!--背景轮播部分-->
 			<ul class="banner_ul">
 				<li style="z-index:7;"><a href="javascript:;"><img src="img/bg1.jpg" alt=""/></a></li>
 				<li style="z-index:6;"><a href="javascript:;"><img src="img/bg2.jpg" alt=""/></a></li>
@@ -438,28 +2127,2777 @@
 			<div class="arr">
 				<div class="toLeft"><</div>
 				<div class="toRight">></div>
-		</div>
+			</div>
 		<!--选项卡部分-->
 			<div class="layout">
 				<ul class="select">
-					<li><span><i class="iconfont">&#xe6ef;</i>母婴儿童  ></span></li>
-					<li><span><i class="iconfont">&#xe6e6;</i>美容彩妆  ></span></li>
-					<li><span><i class="iconfont">&#xe6ee;</i>服饰鞋包  ></span></li>
-					<li><span><i class="iconfont">&#xe6e8;</i>家居个护  ></span></li>
-					<li><span><i class="iconfont">&#xe69c;</i>营养保健  ></span></li>
-					<li><span><i class="iconfont">&#xe677;</i>海外直邮  ></span></li>
-					<li><span><i class="iconfont">&#xe6f1;</i>数码家电  ></span></li>
-					<li><span><i class="iconfont">&#xe6f2;</i>环球美食  ></span></li>
-					<li><span><i class="iconfont">&#xe6f4;</i>运动户外  ></span></li>
-					<li><span><i class="iconfont">&#xe6ea;</i>水果生鲜  ></span></li>
-					<li><i class="iconfont">&#xe67a;</i>药品资讯  ></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe6b1;</i>  母婴儿童   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe6ee;</i>  美容彩妆   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe60f;</i>  服饰鞋包   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe674;</i>  家居个护   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe6ad;</i>  营养保健   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe605;</i>  海外直邮   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe7e8;</i>  数码家电   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe600;</i>  环球美食   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe604;</i>  运动户外   ></a></li>
+					<li><a href="javascript:;"><i class="iconfont">&#xe60e;</i>  水果生鲜   ></a></li>
+					<li><a href="javascript:;" class="last1"><i class="iconfont">&#xe61f;</i>  药品资讯   ></a></li>
 				</ul>
-				<div></div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">奶粉</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">营养辅食</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">童装童鞋</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">纸尿裤/拉拉裤</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">宝宝用品</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">孕妈必备</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left1_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left1_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">护肤</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">彩妆</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">香水/香氛</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">面膜</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">防晒修复</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left2_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left2_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom1.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">精选大牌</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">女式箱包</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">男士箱包</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">手表配饰</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">服饰内衣</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">鞋</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left3_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left3_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom2.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">洗护日用</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">其他个护</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">居家用品</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">女性护理</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">宠物生活</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">家装家纺</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left4_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left4_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom3.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">营养补充</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">女性必备</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">男性必备</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">健康养护</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">关爱老年</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">国际汇</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left5_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left5_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom4.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">母婴专区</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">电子生活</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">服饰鞋包</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">美容彩妆</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">日用家居</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">美食保健</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left6_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left6_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom5.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">手机/配件</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">生活电器</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">厨房电器</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">数码影音</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">个护健康</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">办公/外设</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left7_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left7_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom6.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">乳品/咖啡/麦片/冲饮</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">茶/酒/饮料</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">休闲零食</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">人气热门</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">粮油副食</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">饼干糕点</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left8_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left8_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom7.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">运动鞋</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">户外鞋靴</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+						<div class="box1_left3">
+						  	<h1><a href="javascript:;">户外装备</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">童装</a><span>|</span>
+						  		<a href="javascript:;">儿童配饰</a><span>|</span>
+						  		<a href="javascript:;" class="reds">童鞋</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">运动服装</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">户外服装</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left6">
+						  	<h1><a href="javascript:;">更多分类</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">营养</a><span>|</span>
+						  		<a href="javascript:;" class="reds">洗护</a><span>|</span>
+						  		<a href="javascript:;">待产新生</a><span>|</span>
+						  		<a href="javascript:;">穿戴</a><span>|</span>
+						  		<a href="javascript:;">塑身</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left9_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left9_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom8.jpg" /></a>
+					</div>
+				</div>
+				<div class="select_box">
+					<div class="box1_left">
+						<div class="box1_left1">
+						  	<h1><a href="javascript:;">新鲜水果</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">爱他美</a><span>|</span>
+						  		<a href="javascript:;" class="reds">牛栏</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Hero Baby</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喜宝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">贝拉米</a><span>|</span>
+						  		<a href="javascript:;" class="reds">美素佳儿</a><span>|</span>
+						  		<a href="javascript:;">美林</a><span>|</span>
+						  		<a href="javascript:;" class="reds">a2</a><span>|</span>
+						  		<a href="javascript:;">惠氏</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">雅培</a><span>|</span>
+						  		<a href="javascript:;">美赞臣</a><span>|</span>
+						  		<a href="javascript:;" class="reds">合生元</a><span>|</span>
+						  		<a href="javascript:;" class="reds">Pre段</a><span>|</span>
+						  		<a href="javascript:;" class="reds">1段</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;" class="reds">2段</a><span>|</span>
+						  		<a href="javascript:;">3段</a><span>|</span>
+						  		<a href="javascript:;">5段（2+）</a><span>|</span>
+						  		<a href="javascript:;">4段（1+）</a><span>|</span>
+						  		<a href="javascript:;">6段</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left2">
+						  	<h1><a href="javascript:;">水产海鲜</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">辅食泥</a><span>|</span>
+						  		<a href="javascript:;" class="reds">米粉米糊</a><span>|</span>
+						  		<a href="javascript:;" class="reds">泡芙</a><span>|</span>
+						  		<a href="javascript:;">溶溶豆</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">营养品</a><span>|</span>
+						  		<a href="javascript:;">饼干</a><span>|</span>
+						  		<a href="javascript:;">肉松面仔</a><span>|</span>
+						  		<a href="javascript:;">调味品</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">其他辅食</a><span>|</span>
+						  		<a href="javascript:;">其他零食</a>
+						  	</p>
+						</div>
+					  	<div class="box1_left4">
+						  	<h1><a href="javascript:;">肉品禽蛋</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">花王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">尤妮佳</a><span>|</span>
+						  		<a href="javascript:;" class="reds">大王</a><span>|</span>
+						  		<a href="javascript:;" class="reds">好奇</a><span>|</span>
+						  		<a href="javascript:;">妈咪宝贝</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">帮宝适</a><span>|</span>
+						  		<a href="javascript:;">班博</a><span>|</span>
+						  		<a href="javascript:;">丽贝乐</a><span>|</span>
+						  		<a href="javascript:;">宝松怡</a><span>|</span>
+						  		<a href="javascript:;">NB号</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">S号</a><span>|</span>
+						  		<a href="javascript:;">M号</a><span>|</span>
+						  		<a href="javascript:;">L号</a><span>|</span>
+						  		<a href="javascript:;">XL号</a><span>|</span>
+						  		<a href="javascript:;">XXL号</a>
+						  	</p>
+					  	</div>
+					  	<div class="box1_left5">
+						  	<h1><a href="javascript:;">速冻特产</a></h1>
+						  	<p class="first">
+						  		<a href="javascript:;" class="reds">洗漱护肤</a><span>|</span>
+						  		<a href="javascript:;" class="reds">护理</a><span>|</span>
+						  		<a href="javascript:;" class="reds">喂养</a><span>|</span>
+						  		<a href="javascript:;">出行</a><span>|</span>
+						  		<a href="javascript:;">清洁消毒</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">文具图书</a><span>|</span>
+						  		<a href="javascript:;">积木</a><span>|</span>
+						  		<a href="javascript:;">益智玩具</a><span>|</span>
+						  		<a href="javascript:;">其他玩具</a>
+						  	</p>
+						  	<p>
+						  		<a href="javascript:;">宝宝家居</a><span>|</span>
+						  		<a href="javascript:;">小家电</a>
+						  	</p>
+					  	</div>
+					</div>
+					<div class="box1_right">
+						<span><a href="javascript:;"><img src="img/left10_1.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_2.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_3.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_4.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_5.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_6.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_7.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_8.jpg"/></a></span>
+						<span><a href="javascript:;"><img src="img/left10_9.jpg"/></a></span>
+					</div>
+					<div class="box1_right_bottom">
+						<a href="javascript:;"><img src="img/right_bottom9.jpg" /></a>
+					</div>
+				</div>
 			</div>
+		</div>
+		<!--背景底部-->
+		<div class="banner_bottom">
+			<div class="layout">
+				<span class="left">
+					<a href="javascript:;"><i class="iconfont">&#xe60d;</i><span class="sn1">100%正品</span></a>
+					<a href="javascript:;"><i class="iconfont">&#xe6f2;</i><span class="sn2">30天无忧退货</span></a>
+					<a href="javascript:;"><i class="iconfont">&#xe64c;</i><span class="sn3">满88包邮（部分特殊商品除外）</span></a>
+				</span>
+				<span class="right">
+					<i class="iconfont">&#xe611;</i><a href="javascript:;">领考拉1000元新人礼，APP下单更享手机价</a>
+				</span>
+			</div>
+		</div>
+		<!--除了上面的以下所有部分-->
+		<div class="container">
+			<!--两侧跟随的导航栏-->
+			<!--左侧边栏-->
+			<div class="container_left main">
+				<a href="javascript:;"><img src="img/gdbt.jpg"/></a>
+				<ul class="container_left_list">
+					<li class="container_left1">今日限时购</li>
+					<li class="container_left1">今日上新</li>
+					<li class="container_left1">热门品牌</li>
+					<li>母婴专区</li>
+					<li>美容彩妆</li>
+					<li>服饰鞋包</li>
+					<li>家居个护</li>
+					<li>营养保健</li>
+					<li>海外直邮</li>
+					<li>数码家电</li>
+					<li>环球美食</li>
+					<li>运动户外</li>
+					<a href="javascript:;"><img src="img/erweima.jpg"/></a>
+				</ul>
+			</div>
+			<!--右侧边栏-->
+			<div class="container_right main">
+				<dl>
+					<dt><a href="javascript:;"><i class="iconfont">&#xe690;</i></a></dt>
+						<dd><a href="login.html" target="_blank">签到</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="javascript:;"><i class="iconfont">&#xe602;</i></a></dt>
+						<dd><a href="javascript:;">购物车</a></dd>
+				</dl>
+				<dl>
+					<dt><a href="javascript:;"><i class="iconfont">&#xe611;</i></a></dt>
+						<dd><a href="javascript:;">APP</a></dd>
+				</dl>
+				<dl class="container_right1">
+					<dt><i class="iconfont">&#xe622;</i></dt>
+						<dd>TOP</dd>
+				</dl>
+			</div>
+			<!--详情列表-->
+			<div class="layout xqlba">
+				<ul class="xqlist">
+					<li><a href="javascript:;"><img src="img/xqlist1.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/xqlist2.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/xqlist3.jpg"/></a></li>
+					<li><a href="javascript:;"><img src="img/xqlist4.jpg"/></a></li>
+				</ul>
+			</div>
+			<!--今日限时购-->
+			<div class="layout jrxsga">
+				<p class="jrxsg">
+					<span class="jrbt">今日限时购</span>
+					<span class="sc">本场还剩</span>
+					<span id="s1"></span><span id="s2"></span>
+					<span id="m1">:</span><span id="s3"></span>
+					<span id="s4"></span><span id="m2">:</span>
+					<span id="s5"></span><span id="s6"></span>
+					<a href="javascript:;">进入限时购频道></a>
+				</p>
+				<ul class="shoplist">
+					<!--<li>
+						<a href="pages.html">
+							<img src="img/jrxsg1.jpg" alt="" />
+						</a>
+						<div class="s_right">
+							<a href="pages.html">
+								<p class="s_p1">防丢牵引绳设计 安心出游</p>
+								<p class="s_p2">9UM 九微米 企鹅防丢失书包 幼儿适用</p>
+								<button>立即抢购</button>
+							</a>
+								<p class="s_p3">￥99<span>￥119</span></p>
+								<p class="s_p4">剩余58件</p>
+						</div>
+					</li>-->
+				</ul>
+				<a href="javascript:;"><img src="img/jrxsg_last.jpg" alt="" class="sp_l"/></a>
+			</div>
+			<!--每日上新-->
+			<div class="layout mrsxa">
+				<p class="mrsx">
+					<span class="mrbt">每日上新</span>
+					<span class="mrs">全世界好物，0点更新</span>
+					<a href="javascript:;">进入新品频道></a>
+				</p>
+				<div class="mrsxml">
+					<div class="mrsxml1">
+						<a href="javascript:;">
+							<img src="img/mrsxml1.jpg"/>
+							<p class="p1">英国高街时尚珠宝品牌</p>
+							<p class="p2">满<span class="ss1">2</span>件减<span class="ss2">50</span><span class="ss3">></span></p>
+						</a>
+					</div>
+					<div class="mrsxml2">
+						<a href="javascript:;">
+							<img src="img/mrsxml2.jpg"/>
+						</a>
+					</div>
+				</div>
+				<ul class="shoplist1">
+					<!--<li>
+						<a href="pages1.html">
+							<img src="img/mrsx1.jpg" alt="" />
+							<p class="ppp1">Manduka青蛙 万能瑜伽垫清洗剂 59毫升</p>
+						</a>
+						<p class="ppp2">890<span class="sss1">1890</span></p>
+					</li>-->
+				</ul>
+				<a href="javascript:;" class="mrsx_wm">			
+					<div class="last1"><span>每日上新</span><p class="mrsx_hx">—</p><p class="mrsx_time" id="mrsx_time"></p></div>
+					<div class="last2">查看全部  ></div>
+				</a>
+			</div>
+			<!--热门品牌-->
+			<div class="layout rmppa">
+				<p class="rmpp">
+					<span class="rmbt">热门品牌</span>
+					<span class="rms">全球精选，一网打尽</span>
+					<a href="javascript:;">换一批 ○</a>
+				</p>
+				<ul class="rmpp_top">
+					<li style="z-index:3;"><a href="javascript:;" title="the little sugar milk baby 一米半糖"><img src="img/rmpp_lb1.jpg"/></a></li>
+					<li style="z-index:2;"><a href="javascript:;" title="Derma 德玛"><img src="img/rmpp_lb2.jpg"/></a></li>
+					<li style="z-index:1;"><a href="javascript:;" title="MDB"><img src="img/rmpp_lb3.jpg"/></a></li>
+				</ul>
+				<div class="rmpp_center">
+					<a href="javascript:;" title="the little sugar milk baby 一米半糖" class="rmpp_center1"></a>
+					<a href="javascript:;" title="Derma 德玛" class="rmpp_center2"></a>
+					<a href="javascript:;" title="MDB" class="rmpp_center3"></a>
+				</div>
+				<div class="rmpp_bottom">
+					<a href="javascript:;" title="the little sugar milk baby 一米半糖" style="z-index:3;">
+						<p class="p1">the little sugar milk baby 一米半糖</p>
+						<p class="p2">源自英国婴童设计师品牌</p>
+					</a>
+					<a href="javascript:;" title="Derma 德玛" style="z-index:2;">
+						<p class="p1">Derma 德玛</p>
+						<p class="p2">驰名北欧，健康环保品牌</p>
+					</a>
+					<a href="javascript:;" title="MDB" style="z-index:1;">
+						<p class="p1">MDB</p>
+						<p class="p2">从小到大 一口好牙</p>
+					</a>
+				</div>
+				<div class="rmpp_arr">
+					<div class="rmpp_toLeft"><</div>
+					<div class="rmpp_toRight">></div>
+				</div>
+				<ul class="rmpp_list">
+					<li><img src="img/rmpp1.jpg"/><p>蜂蜜</p></li>
+					<li><img src="img/rmpp2.jpg"/><p>独具特色的蜂蜜品牌</p></li>
+					<li><img src="img/rmpp3.jpg"/><p>TAhi蜂蜜</p></li>
+					<li><img src="img/rmpp4.jpg"/><p>可以吃的蜂蜜面膜</p></li>
+					<li><img src="img/rmpp5.jpg"/><p>英国大型国民超市</p></li>
+					<li><img src="img/rmpp6.jpg"/><p>澳洲蜂蜜</p></li>
+					<li><img src="img/rmpp7.jpg"/><p>来自希腊的好橄榄油</p></li>
+					<li><img src="img/rmpp8.jpg"/><p>原产地袋鼠标</p></li>
+					<li><img src="img/rmpp9.jpg"/><p>澳洲本土高品质保健品牌</p></li>
+					<li><img src="img/rmpp10.jpg"/><p>蜂蜜</p></li>
+				</ul>
+				<div class="rmpp_list_bm">
+					<div class="rmpp_list_bm1">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>146846人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm2">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>5564人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm3">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>735人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm4">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>462人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm5">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>686人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm6">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>309人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm7">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>251人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm8">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>588人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm9">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>58人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+					<div class="rmpp_list_bm10">
+						<a href="javascript:;" class="rlb1">+关注</a>
+						<p>85人关注该品牌</p>
+						<a href="javascript:;" class="rlb2">进入品牌></a>
+					</div>
+				</div>
+			</div>
+			<!--母婴专区-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">母婴专区</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/myzq_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--美容彩妆-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">美容彩妆</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/mrcz_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--服饰鞋包-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">服饰鞋包</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/fsxb_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--家居个护-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">家居个护</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/jjgh_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--营养保健-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">营养保健</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/yybj_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--海外直邮-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">海外直邮</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/hwzy_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--数码家电-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">数码家电</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/smjd_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--环球美食-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">环球美食</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/hqms_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--运动户外-->
+			<div class="layout myzqa">
+				<p class="myzq">
+					<span class="mybt">运动户外</span>
+					<span>热搜词：</span>
+					<span><a href="javascript:;" class="mred">花王旗舰</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">家居出行</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">童装童鞋</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">辅食任选</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;" class="mred">夏季童装</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">孕妈塑身</a></span><span class="sa1">|</span>
+					<span><a href="javascript:;">防妊娠纹</a></span>
+					<a href="javascript:;">更多好货></a>
+				</p>
+				<div class="myzq_left_wm">
+					<a href="javascript:;"><img src="img/hwyd_left.jpg" /></a>
+					<a href="javascript:;" class="myzq_left1 mz">大牌奶粉</a>
+					<a href="javascript:;" class="myzq_left2 mz">纸尿裤</a>
+					<a href="javascript:;" class="myzq_left3 mz">洗护喂养</a>
+					<a href="javascript:;" class="myzq_left4 mz">营养辅食</a>
+					<a href="javascript:;" class="myzq_left5 mz">孕妈专区</a>
+					<a href="javascript:;" class="myzq_left6 mz">玩具专区</a>
+				</div>
+				<div class="myzq_center_wm">
+					<a href="javascript:;" title="辅食N元任选">
+						<p class="mc1">辅食N元任选</p>
+						<p class="mc2">最多99选9</p>
+						<img src="img/myzq_center1.jpg"/>
+					</a>
+					<a href="javascript:;" title="用品N元任选">
+						<p class="mc1">用品N元任选</p>
+						<p class="mc2">最多88选5</p>
+						<img src="img/myzq_center2.jpg"/>
+					</a>
+					<a href="javascript:;" title="童装夏日购">
+						<p class="mc1">童装夏日购</p>
+						<p class="mc2">最高3件5折</p>
+						<img src="img/myzq_center3.jpg"/>
+					</a>
+					<a href="javascript:;" title="玩具N元任选">
+						<p class="mc1">玩具N元任选</p>
+						<p class="mc2">最多99选10</p>
+						<img src="img/myzq_center4.jpg"/>
+					</a>
+				</div>
+				<div class="myzq_right_wm">
+					<p class="myzq_bt">最新热卖</p>
+					<div class="myzq_right_11 myqy1" style="z-index:3;">
+						<img src="img/myzq_right11.jpg" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿" style="z-index:3;">【官方直采】 Merries花王妙而舒 M 64片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥168<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_21 myqy1" style="z-index:2;">
+						<img src="img/myzq_right21.jpg" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶"/>
+						<a href="javascript:;" title="BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶" style="z-index:2;">BLACKMORES 澳佳宝 孕妇孕期及哺乳黄金营养素 180粒*2瓶</a>
+						<p>￥382<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_31 myqy1" style="z-index:1;">
+						<img src="img/myzq_right31.jpg" title="Gerber 嘉宝 DHA益生菌粉 一段 227克"/>
+						<a href="javascript:;" title="Gerber 嘉宝 DHA益生菌粉 一段 227克" style="z-index:1;">Gerber 嘉宝 DHA益生菌粉 一段 227克</a>
+						<p>￥42<span>￥59</span></p>
+					</div>
+					<div class="myzq_right_12 myqy2" style="z-index:3;">
+						<img src="img/myzq_right12.jpg" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶"/>
+						<a href="javascript:;" title="NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶" style="z-index:3;">NORDIC NATURALS 挪威小鱼 婴幼儿鳕鱼肝油滴剂 60毫升/瓶</a>
+						<p>￥88<span>￥95</span></p>
+					</div>
+					<div class="myzq_right_22 myqy2" style="z-index:2;">
+						<img src="img/myzq_right22.jpg" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装"/>
+						<a href="javascript:;" title="B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装" style="z-index:2;">B&B 保宁 儿童抗菌洗衣皂 甘菊香 200克/块 3块装</a>
+						<p>￥45<span>￥69</span></p>
+					</div>
+					<div class="myzq_right_32 myqy2" style="z-index:1;">
+						<img src="img/myzq_right32.jpg" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿" style="z-index:1;">【官方直采】 Merries花王妙而舒 S 82片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥162<span>￥359</span></p>
+					</div>
+					<div class="myzq_right_13 myqy3" style="z-index:3;">
+						<img src="img/myzq_right13.jpg" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货"/>
+						<a href="javascript:;" title="Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货" style="z-index:3;">Aptamil德国爱他美 婴儿奶粉 4段/1+ 600克/盒 3盒 新老包装随机发货</a>
+						<p>￥285<span>￥569</span></p>
+					</div>
+					<div class="myzq_right_23 myqy3" style="z-index:2;">
+						<img src="img/myzq_right23.jpg" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 54片/包 2包装 纸尿裤/尿不湿</a>
+						<p>￥180<span>￥399</span></p>
+					</div>
+					<div class="myzq_right_33 myqy3" style="z-index:1;">
+						<img src="img/myzq_right33.jpg" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机"/>
+						<a href="javascript:;" title="【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机" style="z-index:1;">【官方直采】 moony 尤妮佳 L 54片/包 2包装 纸尿裤/尿不湿 包装随机</a>
+						<p>￥164<span>￥376</span></p>
+					</div>
+					<div class="myzq_right_14 myqy4" style="z-index:3;">
+						<img src="img/myzq_right14.jpg" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339"/>
+						<a href="javascript:;" title="Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339" style="z-index:3;">Fisher Price 费雪婴儿健身架音乐架婴幼儿玩具爱心动物健身架 T6339</a>
+						<p>￥459<span>￥899</span></p>
+					</div>
+					<div class="myzq_right_24 myqy4" style="z-index:2;">
+						<img src="img/myzq_right24.jpg" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤" style="z-index:2;">【官方直采】 Merries花王妙而舒 L 44片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥237<span>￥599</span></p>
+					</div>
+					<div class="myzq_right_34 myqy4" style="z-index:1;">
+						<img src="img/myzq_right34.jpg" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤"/>
+						<a href="javascript:;" title="3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤" style="z-index:1;">3包装|【官方直采】 Merries花王妙而舒 XL 38片/包 3包装 拉拉裤/学步裤</a>
+						<p>￥256<span>￥429</span></p>
+					</div>
+					<ul class="myzq_bottoms">
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<ul class="myzq_bottom_logo">
+					<li>热卖品牌：</li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom1.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom2.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom3.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom4.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom5.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom6.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom7.jpg"/></a><span>&hearts;</span></li>
+					<li class="yryc"><a href="javascript:;"><img src="img/myzq_bottom8.jpg"/></a><span>&hearts;</span></li>
+				</ul>
+			</div>
+			<!--猜你喜欢-->
+			<div class="layout cnxha">
+				<p class="cnxh">
+					<span class="cnbt">猜你喜欢</span>
+					<span class="cns">根据你的浏览记录推荐的商品</span>
+				</p>
+				<ul class="cnxh_content">
+					<li>
+						<a href="javascript:;" title="4件装 | Unicharm尤妮佳 Silcot省1/2化妆水的化妆棉40枚"><img src="img/cnxh1.jpg"/></a>
+						<p><a href="javascript:;" title="4件装 | Unicharm尤妮佳 Silcot省1/2化妆水的化妆棉40枚">4件装 | Unicharm尤妮佳 Silcot省1/2化妆水的化妆棉40枚</a></p>
+						<p class="cnxh_red">99元任选2件</p>
+						<p class="cnxh_price">￥62<span>￥99</span><a href="javascript:;" class="cnxh_pj1">37768人已评价</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" title="Freeplus 芙丽芳丝 净润洗面霜 100克 人见人爱"><img src="img/cnxh2.jpg"/></a>
+						<p><a href="javascript:;" title="Freeplus 芙丽芳丝 净润洗面霜 100克 人见人爱">Freeplus 芙丽芳丝 净润洗面霜 100克 人见人爱</a></p>
+						<p class="cnxh_red">立省20元</p>
+						<p class="cnxh_price">￥99<span>￥150</span><a href="javascript:;" class="cnxh_pj2">47113人已评价</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" title="【领299减50劵】JAYJUN水光面膜三件装"><img src="img/cnxh3.jpg"/></a>
+						<p><a href="javascript:;" title="【领299减50劵】JAYJUN水光面膜三件装">【领299减50劵】JAYJUN水光面膜三件装</a></p>
+						<p class="cnxh_red">立省50元</p>
+						<p class="cnxh_price">￥259<span>￥612</span><a href="javascript:;" class="cnxh_pj3">18300人已评价</a></p>
+					</li>
+					<li>
+						<a href="javascript:;" title="DMC 欣兰 黑里透白冻膜 225克 美白清洁 毛孔吸尘器"><img src="img/cnxh4.jpg"/></a>
+						<p><a href="javascript:;" title="DMC 欣兰 黑里透白冻膜 225克 美白清洁 毛孔吸尘器">DMC 欣兰 黑里透白冻膜 225克 美白清洁 毛孔吸尘器</a></p>
+						<p class="cnxh_price">￥108<span>￥198</span><a href="javascript:;" class="cnxh_pj4">38362人已评价</a></p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--底部-->
+		<div class="bottom">
+			<div class="bottom_top">
+				<ul>
+					<li>
+						<i class="iconfont">&#xe60d;</i>
+						<p>100%正品</p>
+						<span>正品保障 假一赔十</span>
+					</li>
+					<li>
+						<i class="iconfont">&#xe653;</i>
+						<p>低价保障</p>
+						<span>缩减中间环节</span>
+					</li>
+					<li>
+						<i class="iconfont">&#xe6f2;</i>
+						<p>30天无忧退货</p>
+						<span>国内退货 售后无忧</span>
+					</li>
+					<li>
+						<i class="iconfont">&#xe64c;</i>
+						<p>满88包邮</p>
+						<span>部分特殊商品除外</span>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom_bottom">
+				<div class="bottom_bottom_l">
+					<img src="img/logo.jpg" />
+					<p class="bottomp"><span class="bottomsp">关注我们</span><i class="iconfont ic1">&#xe613;</i><i class="iconfont ic2">&#xe673;</i><i class="iconfont ic3">&#xe601;</i></p>
+				</div>
+				<div class="bottom_bottom_c">
+					<ul>
+						<h3>考拉保障</h3>
+						<li>假一赔十</li>
+						<li>廉政监督</li>
+					</ul>
+					<ul>
+						<h3>新手指南</h3>
+						<li>购物流程</li>
+						<li>支付方式</li>
+						<li>通关税费</li>
+						<li>常见问题</li>
+					</ul>
+					<ul>
+						<h3>售后服务</h3>
+						<li>退货政策</li>
+						<li>退货流程</li>
+						<li>退款说明</li>
+						<li>联系客服</li>
+					</ul>
+					<ul>
+						<h3>物流配送</h3>
+						<li>配送方式</li>
+						<li>配送服务</li>
+						<li>运费标准</li>
+						<li>物流跟踪</li>
+					</ul>
+					<ul>
+						<h3>关于我们</h3>
+						<li>联系我们</li>
+						<li>招商合作</li>
+						<li>销售联盟</li>
+						<li>CEO邮箱</li>
+					</ul>
+				</div>
+				<div class="bottom_bottom_r">
+					<div class="btt1">
+						<a href="javascript:;"><img src="img/bottom_bottom1.jpg" /></a>
+						<p>考拉联合凤凰知音</p>
+					</div>
+					<div class="btt2">
+						<a href="javascript:;"><img src="img/bottom_bottom2.jpg" /></a>
+						<p>扫描下载手机版</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="javascript:;">About NetEase</a>-
+				<a href="javascript:;">公司简介</a>-
+				<a href="javascript:;">联系方式</a>-
+				<a href="javascript:;">友情链接</a>-
+				<a href="javascript:;">招聘信息</a>-
+				<a href="javascript:;">客户服务</a>-
+				<a href="javascript:;">隐私政策</a>-
+				<a href="javascript:;">网络营销</a>-
+				<a href="javascript:;">网站地图</a>-
+				<a href="javascript:;">网易考拉海购</a>
+			</p>
+			<p>
+				<span>网络文化经营许可证：浙网文[2016]0155-055号&nbsp;&nbsp;&nbsp;&nbsp;增值电信业务经营许可证：浙B2-20160288</span>
+				<a href="javascript:;">自营经营者信息</a>
+			</p>
+			<p class="footer_bot"><img src="img/footer1.jpg" class="footer_img3"/> <span class="spa3">浙公网安备 33010802002216&nbsp;&nbsp;&nbsp;&nbsp;网易公司版权所有&copy;1997-2017</span></p>
+			<img src="img/footer2.jpg" class="footer_img1"/>
+			<img src="img/footer3.jpg"  class="footer_img2"/>
 		</div>
 	</body>
 </html>
+<script src="cookie.js"></script>
+<script src="jquery.min.js"></script>
+<script src="ajax.js"></script>
 <script type="text/javascript">
+//	滚动效果:包括吸顶和两侧广告栏
 	$(window).scroll(function(){
 		var height = $(".nav").height();
 		var sTop = $(document).scrollTop();
@@ -481,17 +4919,25 @@
 				"display":"block"
 			})
 		}
+		
+		if(sTop>618){
+			$(".main").stop().animate({ 
+				top : sTop + 65
+			},0)
+		}else{
+			$(".main").css("top","618px");
+		}
 	})
-
-	$(".layout>ul>.lis").mouseover(function(){
+//  头部二级菜单显示隐藏效果
+	$(".layout>ul>.lis").mouseenter(function(){
 		$(this).children("ul").css("display","block");
 		$(this).css({"background-color":"white","padding-bottom":"1px"});
-	}).mouseout(function(){
+	}).mouseleave(function(){
 		$(this).children("ul").css("display","none");
 		$(this).css({"background-color":"#f2f2f2","padding-bottom":0});
 	})
-	
-	var timer = setInterval(autoPlay,2000);
+//	背景轮播和选项卡效果
+	var timer = setInterval(autoPlay,3000);
 	var index = 0;
 	function autoPlay(){
 		index ++ ;
@@ -509,15 +4955,15 @@
 		$(".banner_ol li").eq( index ).addClass("current").siblings().removeClass("current");
 		$(".banner_ul li").eq(index).fadeIn(1000).siblings().fadeOut(1000);
 	}
-	$(".banner").mouseover(function(){
+	$(".select").parent().siblings().mouseenter(function(){
 		$(".banner .arr").css("display","block");
-	}).mouseout(function(){
+	}).mouseleave(function(){
 		$(".banner .arr").css("display","none");
 	})
-	$(".arr").children().mouseover(function(){
+	$(".arr").children().mouseenter(function(){
 		clearInterval( timer );
-	}).mouseout(function(){
-		timer = setInterval(autoPlay,2000);
+	}).mouseleave(function(){
+		timer = setInterval(autoPlay,3000);
 	})
 	$(".arr").find(".toLeft").click(function(){
 		autoPlay1();
@@ -525,11 +4971,264 @@
 	$(".arr").find(".toRight").click(function(){
 		autoPlay();
 	})
-	$(".banner_ol li").mouseover(function(){
+	$(".banner_ol li").mouseenter(function(){
 		clearInterval( timer );
 		index = $(this).index() - 1;
 		autoPlay();
-	}).mouseout(function(){
-		timer = setInterval(autoPlay,2000);
+	}).mouseleave(function(){
+		timer = setInterval(autoPlay,3000);
 	})
+	$(".select li").mouseenter(function(){
+		$(this).addClass("on").siblings().removeClass("on");
+		var index=$(this).index();
+		$(".select_box").eq(index).show().siblings(".select_box").hide() ;
+	})
+	$(".banner .layout").mouseleave(function(){
+		$(".select li").removeClass("on");
+		$(".select_box").css("display","none");
+	})
+	$(".last1").mouseenter(function(){
+		$(".select_box").css("display","none");
+	}).mouseleave(function(){
+		$(".select li").removeClass("on");
+	})
+//	右侧边栏点击回到顶部效果
+	$(".container_right1").click(function(){
+		$("body,html").animate({"scrollTop" : 0},0);
+	})
+//	今日限时购 倒计时效果
+	var t = 10800;
+	showTime();
+	function showTime(){
+		var h = parseInt( t /3600 );
+		var h1=0;
+		var h2=h%10;
+		var m = parseInt( (t - h*3600)/60 );
+		var m1=parseInt(m/10);
+		var m2=m%10;
+		var se = parseInt( t-h*3600-m*60 );
+		var se1=parseInt(se/10);
+		var se2=se%10;
+		document.getElementById("s1").innerHTML = h1;
+		document.getElementById("s2").innerHTML = h2;
+		document.getElementById("s3").innerHTML = m1;
+		document.getElementById("s4").innerHTML = m2;
+		document.getElementById("s5").innerHTML = se1;
+		document.getElementById("s6").innerHTML = se2;
+	}
+	var timer1 = setInterval(function(){
+		t--;
+		if( t < 0 ){
+			t = 10800;
+		}else{
+			showTime();
+		}
+	},1000);
+//	左侧边栏点击楼梯
+$(".container_left_list").children("li").eq(0).click(function(){
+	$("body,html").animate({"scrollTop" : 820},500);
+})
+$(".container_left_list").children("li").eq(1).click(function(){
+	$("body,html").animate({"scrollTop" : 1280},500);
+})
+$(".container_left_list").children("li").eq(2).click(function(){
+	$("body,html").animate({"scrollTop" : 1820},500);
+})
+$(".container_left_list").children("li").eq(3).click(function(){
+	$("body,html").animate({"scrollTop" : 2175},500);
+})
+$(".container_left_list").children("li").eq(4).click(function(){
+	$("body,html").animate({"scrollTop" : 2818},500);
+})
+$(".container_left_list").children("li").eq(5).click(function(){
+	$("body,html").animate({"scrollTop" : 3461},500);
+})
+$(".container_left_list").children("li").eq(6).click(function(){
+	$("body,html").animate({"scrollTop" : 4104},500);
+})
+$(".container_left_list").children("li").eq(7).click(function(){
+	$("body,html").animate({"scrollTop" : 4747},500);
+})
+$(".container_left_list").children("li").eq(8).click(function(){
+	$("body,html").animate({"scrollTop" : 5390},500);
+})
+$(".container_left_list").children("li").eq(9).click(function(){
+	$("body,html").animate({"scrollTop" : 6033},500);
+})
+$(".container_left_list").children("li").eq(10).click(function(){
+	$("body,html").animate({"scrollTop" : 6676},500);
+})
+$(".container_left_list").children("li").eq(11).click(function(){
+	$("body,html").animate({"scrollTop" : 7319},500);
+})
+//	今日限时购商品列表,从json获取数据
+$(function(){
+	$.ajax({
+		type:"get",
+		url:"http://127.0.0.1/wangyikaolahaigou/datas.json",
+		success:function(res){
+			var html="";
+			for(var i in res.list){
+					var ch=res.list[i];
+					html+=`<li>
+								<a href="pages.html?pid=${ch.id}" target="_blank">
+									<img src="img/${ch.src}" alt="" />
+								</a>
+								<div class="s_right">
+									<a href="pages.html?pid=${ch.id}" target="_blank">
+										<p class="s_p1">${ch.sp1}</p>
+										<p class="s_p2">${ch.sp2}</p>
+										<button>立即抢购</button>
+									</a>
+										<p class="s_p3">${ch.price1}<span>${ch.price2}</span></p>
+										<p class="s_p4">${ch.sp4}</p>
+								</div>
+						   </li>`;
+			}
+			$(".shoplist").html(html);
+		}
+	});
+})
+//	每日上新商品列表,从json获取数据
+$(function(){
+	$.ajax({
+		type:"get",
+		url:"http://127.0.0.1/wangyikaolahaigou/datas1.json",
+		success:function(res){
+			var html="";
+			for(var i in res.list){
+					var ch=res.list[i];
+					html+=`<li>
+						<a href="pages1.html?pid=${ch.id}" title="${ch.sp1}" target="_blank">
+							<img src="img/${ch.src}" alt="" />
+							<p class="ppp1">${ch.sp1}</p>
+						</a>
+						<p class="ppp2">${ch.price1}<span class="sss1">${ch.price2}</span></p>
+					</li>`;
+			}
+			$(".shoplist1").html(html);
+		}
+	});
+})
+//	每日上新中获取当日的月份和日期
+function  dateToString(d,sign){
+		sign = sign || "-";   
+	    var month = getTime(d.getMonth() + 1);
+	    var _date = getTime(d.getDate());
+	    return month + sign + _date;
+	}
+	function getTime(time){
+		return time < 10 ? "0" + time  : time;
+	}
+	var now = new Date();
+    document.getElementById("mrsx_time").innerHTML=dateToString(now,".");
+//  热门品牌左侧轮播
+var timer2 = setInterval(autoPlaya,3000);
+	var indexa = 0;
+	function autoPlaya(){
+		indexa ++ ;
+		if(indexa == $(".rmpp_top li").size()){
+			indexa = 0;
+		}
+		$(".rmpp_top li").eq(indexa).fadeIn(1000).siblings().fadeOut(1000);
+		$(".rmpp_bottom").children("a").eq(indexa).fadeIn(1000).siblings().fadeOut(1000);
+		if(indexa==0){
+			$(".rmpp_center").children("a").eq(0).css("background-color","#f8092b").siblings().css("background-color","#585858");
+		}else if(indexa==1){
+			$(".rmpp_center").children("a").eq(2).css("background-color","#585858").siblings().css("background-color","#f8092b");
+		}else{
+			$(".rmpp_center").children("a").css("background-color","#f8092b");
+		}
+	}
+	function autoPlaya1(){
+		indexa -- ;
+		if(indexa == -1){
+			indexa = 2;
+		}
+		$(".rmpp_top li").eq(indexa).fadeIn(1000).siblings().fadeOut(1000);
+		$(".rmpp_bottom").children("a").eq(indexa).fadeIn(1000).siblings().fadeOut(1000);
+		if(indexa==0){
+			$(".rmpp_center").children("a").eq(0).css("background-color","#f8092b").siblings().css("background-color","#585858");
+		}else if(indexa==1){
+			$(".rmpp_center").children("a").eq(2).css("background-color","#585858").siblings().css("background-color","#f8092b");
+		}else{
+			$(".rmpp_center").children("a").css("background-color","#f8092b");
+		}
+	}
+	$(".rmpp_top,.rmpp_center,.rmpp_bottom,.rmpp_arr").mouseenter(function(){
+		$(".rmpp_arr").css("display","block");
+		clearInterval( timer2 );
+	}).mouseleave(function(){
+		$(".rmpp_arr").css("display","none");
+		timer2 = setInterval(autoPlaya,3000);
+	})
+	$(".rmpp_arr").find(".rmpp_toLeft").click(function(){
+		autoPlaya1();
+	})
+	$(".rmpp_arr").find(".rmpp_toRight").click(function(){
+		autoPlaya();
+	})
+	$(".rmpp_list").children("li").mouseenter(function(){
+		indexb=$(this).index();
+		$(".rmpp_list_bm").children("div").eq(indexb).css("display","block").siblings().css("display","none");
+	}).mouseleave(function(){
+		$(".rmpp_list_bm").children("div").eq(indexb).css("display","none");
+	})
+	$(".rmpp_list_bm").children("div").mouseenter(function(){
+		$(this).css("display","block");
+	}).mouseleave(function(){
+		$(this).css("display","none");
+	})
+//	母婴专区等各个专区右侧轮播效果
+var timer3 = setInterval(autoPlayc,2000);
+	var indexc = 0;
+	function autoPlayc(){
+		indexc ++ ;
+		if(indexc == $(".myzq_bottoms li").size()){
+			indexc = 0;
+		}
+		$(".myzq_bottoms li").eq( indexc ).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexc).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexc).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexc).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexc).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer3);
+	}).mouseleave(function(){
+		timer3 = setInterval(autoPlayc,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer3);
+		indexc = $(this).index()-1;
+		autoPlayc();
+	}).mouseleave(function(){
+		timer3 = setInterval(autoPlayc,2000);
+	})
+	$(".myqy1").find("img").mouseenter(function(){
+		$(this).css("opacity",0.8).siblings("img").css("opacity",0);
+	}).mouseleave(function(){
+		$(this).css("opacity",1).siblings("img").css("opacity",1);
+	})
+	$(".myqy2").find("img").mouseenter(function(){
+		$(this).css("opacity",0.8).siblings("img").css("opacity",0);
+	}).mouseleave(function(){
+		$(this).css("opacity",1).siblings("img").css("opacity",1);
+	})
+	$(".myqy3").find("img").mouseenter(function(){
+		$(this).css("opacity",0.8).siblings("img").css("opacity",0);
+	}).mouseleave(function(){
+		$(this).css("opacity",1).siblings("img").css("opacity",1);
+	})
+	$(".myqy4").find("img").mouseenter(function(){
+		$(this).css("opacity",0.8).siblings("img").css("opacity",0);
+	}).mouseleave(function(){
+		$(this).css("opacity",1).siblings("img").css("opacity",1);
+	})
+//	母婴专区等各个专区底部爱心移入移出显示隐藏效果
+$(".yryc").mouseenter(function(){
+	$(this).find("span").css("display","block");
+}).mouseleave(function(){
+	$(this).find("span").css("display","none");
+})
 </script>

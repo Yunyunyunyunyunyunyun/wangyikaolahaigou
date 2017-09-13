@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				background-color: #efefef;
+			}
+			.header{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.header p{
+				margin:50px auto;
+			}
+			.header p .a1{
+				font-size: 24px;
+				font-weight: bold;
+				color: #323232;
+			}
+			.header p .a1 span{
+				font-size: 34px;
+				color: #c1242e;
+			}
+			.header .so1{
+				font-size: 20px;
+				color: #666;
+				float: right;
+			}
+			.header .so1 .a2{
+				color: #cb5252;
+			}
+			.center{
+				background-color: #fff;
+				height: 970px;
+				width: 1000px;
+				margin: 0 auto;
+				border-radius: 10px;
+				box-shadow: 1px 3px 3px 3px #999;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			.center .tm{
+				width: 320px;
+				height: 40px;
+				display: block;
+				margin: 0 auto;
+			}
+			.center .tm span{
+				display: block;
+				width: 160px;
+				height: 40px;
+				background-color: #cb5252;
+				color: #fff;
+				font-size: 16px;
+				line-height: 40px;
+				text-align: center;
+				float: left;
+				margin: 45px 0;
+			}
+			.center .tm a{
+				display: block;
+				width: 158px;
+				height: 38px;
+				color: #666;
+				border: 1px solid #bbb;
+				border-left: none;
+				font-size: 16px;
+				line-height: 40px;
+				text-align: center;
+				float: left;
+				margin: 45px 0;
+			}
+			.footer{
+				height: 80px;
+			}
+			.footer p{
+				font-size: 12px;
+				color: #bbb;
+				margin-bottom: 10px;
+				text-align: center;
+			}
+			.footer p a{
+				color: #bbb;
+			}
+			.footer p a:hover{
+				color: orange;
+			}
+			.center form{
+				width: 700px;
+				height: 500px;
+				position: absolute;
+				left: 370px;
+				top: 270px;
+			}
+			.center form .f1{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 55px;
+				top: 0;
+			}
+			.center form .f1 .account{
+				height: 42px;
+				width: 200px;
+				line-height: 42px;
+			}
+			.center form .f1 select{
+				height: 46px;
+				width: 110px;
+				line-height: 46px;
+			}
+			.center form .f2{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 55px;
+				top: 70px;
+			}
+			.center form .f2 .pwd{
+				height: 42px;
+				width: 316px;
+				line-height: 42px;
+			}
+			.center form .f3{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 23px;
+				top: 140px;
+			}
+			.center form .f3 .qpwd{
+				height: 42px;
+				width: 316px;
+				line-height: 42px;
+			}
+			.center form .f4{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 39px;
+				top: 210px;
+			}
+			.center form .f4 .yzm{
+				height: 42px;
+				width: 200px;
+				line-height: 42px;
+			}
+			.center form .f4 .kbq{
+				display: block;
+				height: 25px;
+				width: 80px;
+				position: absolute;
+				left: 385px;
+				top: 15px;
+				text-decoration: underline;
+			}
+			.center form .f4 .s4{
+				position: absolute;
+				left: 466px;
+				top: 2px;
+			}
+			.center form .f4 .yzmcontent{
+				height: 44px;
+				width: 108px;
+				border: 1px #aaa solid;
+				display: block;
+				position: absolute;
+				left: 274px;
+				top: 2px;
+			}
+			.center form .f5{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 39px;
+				top: 280px;
+			}
+			.center form .f5 .telphonenum{
+				height: 42px;
+				width: 316px;
+				line-height: 42px;
+			}
+			.center form .f6{
+				height: 46px;
+				line-height: 46px;
+				display: block;
+				position: absolute;
+				left: 104px;
+				top: 350px;
+			}
+			.center form .f6 .zc{
+				width: 316px;
+				height: 42px;
+				line-height: 42px;
+				text-align: center;
+				color: #fff;
+				background-color: #df9797;
+				font-size: 16px;
+			}
+			.center form .f7{
+				height: 46px;
+				width: 320px;
+				display: block;
+				position: absolute;
+				left: 102px;
+				top: 398px;
+				text-align: left;
+				font-size: 12px;
+				line-height: 19px;
+				color: #bbb;
+			}
+			.center form .f7 a{
+				color: #bbb;
+			}
+			.center form .f7 a:hover{
+				color: #666;
+			}
+			.center form .s1{
+				color: red;
+				font-size: 12px;
+				width: 250px;
+				text-align: left;
+				display: block;
+				position: absolute;
+				left: 375px;
+				top: 0;
+			}
+			.center form .s2{
+				color: red;
+				font-size: 12px;
+				width: 250px;
+				text-align: left;
+				display: block;
+				position: absolute;
+				left: 375px;
+				top: 0;
+			}
+			.center form .s3{
+				color: red;
+				font-size: 12px;
+				width: 250px;
+				text-align: left;
+				display: block;
+				position: absolute;
+				left: 405px;
+				top: 0;
+			}
+			.center form .s4{
+				color: red;
+				font-size: 12px;
+				width: 250px;
+				text-align: left;
+				display: block;
+				position: absolute;
+				left: 403px;
+				top: 0;
+			}
+			.center form .s5{
+				color: red;
+				font-size: 12px;
+				width: 250px;
+				text-align: left;
+				display: block;
+				position: absolute;
+				left: 390px;
+				top: 0;
+			}
+			.center_bottom a img{
+				width: 900px;
+				height: 100px;
+				position: absolute;
+				left: 182px;
+				top: 790px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<p><a href="login.html" class="a1"><span>网易</span>邮箱帐号</a><span class="so1">已有帐号？去<a href="login.html"  class="a2">登录</a></span></p>
+		</div>
+		<div class="center">
+			<p class="tm"><span>普通帐号注册</span><a href="javascript:;">靓号注册</a></p>
+			<form action="login.html" class="forms" >
+				<p class="f1">帐号：<input type="text" placeholder="6-18位字母数字组合" class="account" />
+				<select>
+					<option value="1">@163.com</option>
+					<option value="2">@126.com</option>
+					<option value="3">@yeah.net</option>
+				</select>
+				<span class="s1"></span>
+				</p>
+				<p class="f2">密码：<input type="password" class="pwd" placeholder="6-16位密码，区分大小写"/><span class="s2"></span></p>
+				<p class="f3">确认密码：<input type="password" class="qpwd" placeholder="再次输入密码"/><span class="s3"></span></p>
+				<p class="f4">验证码：<input type="text" class="yzm" placeholder="请输入对应的验证码"/><span class="yzmcontent"></span><a href="javascript:;" class="kbq">获取验证码</a><span class="s4"></span></p>
+				<p class="f5">手机号：<input type="text" class="telphonenum" placeholder="11位手机号"/><span class="s5"></span></p>
+				<p class="f6"><input type="submit" value="注册" class="zc" /></p>
+				<p class="f7"><input type="checkbox" name="a" id="c1" checked="checked"/>用户勾选代表同意<a href="javascript:;">《服务条款》</a>和<a href="javascript:;">《网络游戏用户隐私保护和个人信息利用政策》</a></p>	
+			</form>
+			<div class="center_bottom">
+				<a href="javascript:;"><img src="img/register_ewm.jpg" /></a>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="javascript:;">About NetEase</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">公司简介</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">联系方式</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">OAuth2.0认证</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">招聘信息</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">客户服务</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">相关法律</a>&nbsp;&nbsp;-&nbsp;&nbsp;
+				<a href="javascript:;">网络营销</a>
+			</p>
+			<p>网易公司版权所有 &copy;1997-2017</p>
+		</div>
+	</body>
+</html>
+<script src="cookie.js"></script>
+<script src="jquery.min.js"></script>
+<script type="text/javascript">
+	function rand(min,max){
+		return Math.floor(Math.random()*(max-min+1))+min;
+	}
+	function getColor(){
+		var r=rand(0,255).toString(16);
+		var g=rand(0,255).toString(16);
+		var b=rand(0,255).toString(16);
+		return "#"+(r.length<2?("0"+r):r)+(g.length<2?("0"+g):g)+(b.length<2?("0"+b):b);
+	}
+	$(".kbq").click(function(){
+		var arr=[];
+		for(var i=0;i<4;i++){
+			var code=rand(48,122);
+			while(code>=58&&code<=64||code>=91&&code<=96){
+				code=rand(48,122);
+			}
+			arr[i]=String.fromCharCode(code);
+		}
+		var str=arr.join("");
+		$(".yzmcontent").html(str).css("color",getColor());
+	})
+	//帐号
+	 var flagAcc=null;
+	 $(".account").blur(function(){
+	 	var reg=/^[a-z][a-z0-9]{5,17}$/i;
+	 	var reg1=/^[0-9]$/;
+	 	var str=$(".account").val();
+	 	if(reg.test(str)){
+	 		$(".s1").html("正确");
+	 		flagAcc=true;
+	 		setCookie("user",JSON.stringify(str));
+	 	}else if(reg1.test(str.substr(0,1))){
+	 		$(".s1").html("帐号须由字母开头");
+	 		flagAcc=false;
+	 	}else{
+	 		$(".s1").html("帐号须由6-18个字符组成");
+	 		flagAcc=false;
+	 	}
+	 })
+	 //密码
+	 var flagPwd=null;
+	 $(".pwd").blur(function(){
+	 	var reg=/^\w{6,16}$/;
+	 	var reg1=/^\d{6,16}$/;
+	 	var str=$(".pwd").val();
+	 	if(reg1.test(str)){
+	 		$(".s2").html("密码过于简单，请重新设置");
+	 		flagPwd=false;
+	 	}else if(reg.test(str)){
+	 		$(".s2").html("正确");
+	 		flagPwd=true;
+	 		setCookie("upwd",JSON.stringify(str));
+	 	}else{
+	 		$(".s2").html("密码须由6-16个字符组成，区分大小写");
+	 		flagPwd=false;
+	 	}
+	 })
+	 //确认密码
+	  var flagQpwd=null;
+	 $(".qpwd").blur(function(){
+		 if($(".qpwd").val()==$(".pwd").val()){
+		 	$(".s3").html("正确");
+		 	flagQpwd=true;
+		 }else{
+		 	$(".s3").html("密码不一致");
+		 	flagQpwd=false;
+		 }
+	})
+	 //验证码
+	 var flagYzm=null;
+	 $(".yzm").blur(function(){
+		 if($(".yzm").val().toLowerCase()==$(".yzmcontent").html().toLowerCase()){
+		 	$(".s4").html("正确");
+		 	flagYzm=true;
+		 }else{
+		 	$(".s4").html("验证码不正确");
+		 	flagYzm=false;
+		 }
+	}) 
+	 //手机号
+	 var flagTel=null;
+	 $(".telphonenum").blur(function(){
+	 	var reg=/^(13|15|18)[\d]{9}$/;
+	 	var str=$(".telphonenum").val();
+	 	if(reg.test(str)){
+	 		$(".s5").html("正确");
+	 		flagTel=true;
+	 		setCookie("utel",JSON.stringify(str));
+	 	}else{
+	 		$(".s5").html("请输入正确的手机号");
+	 		flagTel=false;
+	 	}
+	 })
+	  	$(".forms").submit(function(){
+	  		console.log(flagAcc,flagPwd,flagQpwd,flagYzm,flagTel)
+	  		if(flagAcc&&flagPwd&&flagQpwd&&flagYzm&&flagTel){
+		 		return true;	
+		 	}else{
+		 		return false;
+		 	}
+	  	})
+</script>

@@ -1,0 +1,67 @@
+{
+	"list" : [
+		{
+			"id" : "shop001",
+			"src" : "mrsx1.jpg",
+			"sp1":"Manduka青蛙 万能瑜伽垫清洗剂 59毫升",
+			"price1" : "￥99",
+			"price2" : "￥119"
+		},
+		{
+			"id" : "shop002",
+			"src" : "mrsx2.jpg",
+			"sp1":"Vogel's沃格尔 新西兰原装 成人全脂新鲜牛奶粉 1千克/袋 2袋",
+			"price1" : "￥148",
+			"price2" : "￥298"
+		},
+		{
+			"id" : "shop003",
+			"src" : "mrsx3.jpg",
+			"sp1":"SUQQU 四色眼影 02# 光橙花",
+			"price1" : "￥580",
+			"price2" : "￥630"
+		},
+		{
+			"id" : "shop004",
+			"src" : "mrsx4.jpg",
+			"sp1":"【17年秋冬新款】 EMPORIO ARMANI 安普里奥·阿玛尼 男士灰色牛皮皮带",
+			"price1" : "￥1699",
+			"price2" : "￥2680"
+		},
+		{
+			"id" : "shop005",
+			"src" : "mrsx5.jpg",
+			"sp1":"NIKE 耐克 Nike Air Max 90 Ultra 2.0 Flyknit男子跑步鞋 875943-001",
+			"price1" : "￥798",
+			"price2" : "￥1199"
+		},
+		{
+			"id" : "shop006",
+			"src" : "mrsx6.jpg",
+			"sp1":"BRAUN 博朗 电动剃须刀9系全身水洗充电往复式刮胡刀9030s",
+			"price1" : "￥1099",
+			"price2" : "￥1699"
+		},
+		{
+			"id" : "shop007",
+			"src" : "mrsx7.jpg",
+			"sp1":"COACH 蔻驰 女士 简约搭扣单肩包 白色",
+			"price1" : "￥1999",
+			"price2" : "￥3000"
+		},
+		{
+			"id" : "shop008",
+			"src" : "mrsx8.jpg",
+			"sp1":"benefit 贝玲妃 蒲公英婴儿粉红胭脂霜 30毫升",
+			"price1" : "￥225",
+			"price2" : "￥255"
+		},
+		{
+			"id" : "shop009",
+			"src" : "mrsx9.jpg",
+			"sp1":"Daiso 大创 女性专用洗剂内衣内裤清洁剂 80毫升",
+			"price1" : "￥56",
+			"price2" : "￥72"
+		}
+	]
+}
