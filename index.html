@@ -5179,15 +5179,15 @@ var timer2 = setInterval(autoPlaya,3000);
 	}).mouseleave(function(){
 		$(this).css("display","none");
 	})
-//	母婴专区等各个专区右侧轮播效果
+//	母婴专区右侧轮播效果
 var timer3 = setInterval(autoPlayc,2000);
 	var indexc = 0;
 	function autoPlayc(){
 		indexc ++ ;
-		if(indexc == $(".myzq_bottoms li").size()){
+		if(indexc == 3){
 			indexc = 0;
 		}
-		$(".myzq_bottoms li").eq( indexc ).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myzq_bottoms li").eq(indexc).css("background-color","#333").siblings("li").css("background-color","#ddd");
 		$(".myqy1").eq(indexc).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
 		$(".myqy2").eq(indexc).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
 		$(".myqy3").eq(indexc).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
@@ -5205,6 +5205,215 @@ var timer3 = setInterval(autoPlayc,2000);
 	}).mouseleave(function(){
 		timer3 = setInterval(autoPlayc,2000);
 	})
+//	美容彩妆右侧轮播效果	
+var timer4 = setInterval(autoPlayd,2000);
+	var indexd = 3;
+	function autoPlayd(){
+		indexd ++ ;
+		if(indexd == 6){
+			indexd = 3;
+		}
+		$(".myzq_bottoms li").eq(indexd).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexd).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexd).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexd).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexd).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer4);
+	}).mouseleave(function(){
+		timer4 = setInterval(autoPlayd,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer4);
+		indexd = $(this).index()+2;
+		autoPlayd();
+	}).mouseleave(function(){
+		timer4 = setInterval(autoPlayd,2000);
+	})
+	//	服饰鞋包右侧轮播效果
+	var timer5 = setInterval(autoPlaye,2000);
+	var indexe = 6;
+	function autoPlaye(){
+		indexe ++ ;
+		if(indexe == 9){
+			indexe = 6;
+		}
+		$(".myzq_bottoms li").eq(indexe).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexe).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexe).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexe).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexe).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer5);
+	}).mouseleave(function(){
+		timer5 = setInterval(autoPlaye,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer5);
+		indexe = $(this).index()+5;
+		autoPlaye();
+	}).mouseleave(function(){
+		timer5 = setInterval(autoPlaye,2000);
+	})
+	//	家居个护右侧轮播效果
+	var timer6 = setInterval(autoPlayf,2000);
+	var indexf = 9;
+	function autoPlayf(){
+		indexf ++ ;
+		if(indexf == 12){
+			indexf = 9;
+		}
+		$(".myzq_bottoms li").eq(indexf).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexf).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexf).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexf).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexf).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer6);
+	}).mouseleave(function(){
+		timer6 = setInterval(autoPlayf,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer6);
+		indexf = $(this).index()+8;
+		autoPlayf();
+	}).mouseleave(function(){
+		timer6 = setInterval(autoPlayf,2000);
+	})
+	//	营养保健右侧轮播效果
+	var timer7 = setInterval(autoPlayg,2000);
+	var indexg = 12;
+	function autoPlayg(){
+		indexg ++ ;
+		if(indexg == 15){
+			indexg = 12;
+		}
+		$(".myzq_bottoms li").eq(indexg).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexg).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexg).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexg).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexg).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer7);
+	}).mouseleave(function(){
+		timer7 = setInterval(autoPlayg,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer7);
+		indexg = $(this).index()+11;
+		autoPlayg();
+	}).mouseleave(function(){
+		timer7 = setInterval(autoPlayg,2000);
+	})
+	//	海外直邮右侧轮播效果
+	var timer8 = setInterval(autoPlayh,2000);
+	var indexh = 15;
+	function autoPlayh(){
+		indexh ++ ;
+		if(indexh == 18){
+			indexh = 15;
+		}
+		$(".myzq_bottoms li").eq(indexh).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexh).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexh).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexh).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexh).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer8);
+	}).mouseleave(function(){
+		timer8 = setInterval(autoPlayh,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer8);
+		indexh = $(this).index()+14;
+		autoPlayh();
+	}).mouseleave(function(){
+		timer8 = setInterval(autoPlayh,2000);
+	})
+	//	数码家电右侧轮播效果
+	var timer9 = setInterval(autoPlayi,2000);
+	var indexi = 18;
+	function autoPlayi(){
+		indexi ++ ;
+		if(indexi == 21){
+			indexi = 18;
+		}
+		$(".myzq_bottoms li").eq(indexi).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexi).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexi).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexi).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexi).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer9);
+	}).mouseleave(function(){
+		timer9 = setInterval(autoPlayi,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer9);
+		indexi = $(this).index()+17;
+		autoPlayi();
+	}).mouseleave(function(){
+		timer9 = setInterval(autoPlayi,2000);
+	})
+	//	环球美食右侧轮播效果
+	var timer10 = setInterval(autoPlayj,2000);
+	var indexj = 21;
+	function autoPlayj(){
+		indexj ++ ;
+		if(indexj == 24){
+			indexj = 21;
+		}
+		$(".myzq_bottoms li").eq(indexj).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexj).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexj).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexj).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexj).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer10);
+	}).mouseleave(function(){
+		timer10 = setInterval(autoPlayj,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer10);
+		indexj = $(this).index()+20;
+		autoPlayj();
+	}).mouseleave(function(){
+		timer10 = setInterval(autoPlayj,2000);
+	})
+	//	运动户外右侧轮播效果
+	var timer11 = setInterval(autoPlayk,2000);
+	var indexk = 24;
+	function autoPlayk(){
+		indexk ++ ;
+		if(indexk == 27){
+			indexk = 24;
+		}
+		$(".myzq_bottoms li").eq(indexk).css("background-color","#333").siblings("li").css("background-color","#ddd");
+		$(".myqy1").eq(indexk).fadeIn(1000).siblings(".myqy1").fadeOut(1000);
+		$(".myqy2").eq(indexk).fadeIn(1000).siblings(".myqy2").fadeOut(1000);
+		$(".myqy3").eq(indexk).fadeIn(1000).siblings(".myqy3").fadeOut(1000);
+		$(".myqy4").eq(indexk).fadeIn(1000).siblings(".myqy4").fadeOut(1000);
+	}
+	$(".myzq_bottoms").siblings().mouseenter(function(){
+		clearInterval(timer11);
+	}).mouseleave(function(){
+		timer11 = setInterval(autoPlayk,2000);
+	})
+	$(".myzq_bottoms li").mouseenter(function(){
+		clearInterval(timer11);
+		indexk = $(this).index()+23;
+		autoPlayk();
+	}).mouseleave(function(){
+		timer11 = setInterval(autoPlayk,2000);
+	})
+	
 	$(".myqy1").find("img").mouseenter(function(){
 		$(this).css("opacity",0.8).siblings("img").css("opacity",0);
 	}).mouseleave(function(){
